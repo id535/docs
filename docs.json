@@ -6,7 +6,10 @@
     "light": "https://media.brand.dev/58777987-f3a1-4df2-a394-337095e00d53.svg",
     "dark": "https://media.brand.dev/58777987-f3a1-4df2-a394-337095e00d53.svg"
   },
-  "favicon": "https://media.brand.dev/799a7f12-71d9-47a6-a2c9-b3e85142e844.svg",
+  "favicon": {
+    "light": "https://media.brand.dev/799a7f12-71d9-47a6-a2c9-b3e85142e844.svg",
+    "dark": "https://media.brand.dev/799a7f12-71d9-47a6-a2c9-b3e85142e844.svg"
+  },
   "colors": {
     "primary": "#23A86E",
     "light": "#050505",
@@ -53,7 +56,7 @@
     ]
   },
   "background": {
-    "decoration": "gradient"
+    "decoration": "windows"
   },
   "appearance": {
     "default": "dark"
