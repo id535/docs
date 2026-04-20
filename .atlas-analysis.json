@@ -1,0 +1,50 @@
+{
+  "projectType": "saas",
+  "projectName": "NinjaHackz",
+  "projectDescription": "NinjaHackz is a subscription-based platform offering hacking challenge software with instant digital delivery and license key access.",
+  "theme": "almond",
+  "primaryColor": "#7c7c7c",
+  "lightColor": "#050505",
+  "darkColor": "#c4c4c4",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "getting-started"
+        ]
+      },
+      {
+        "group": "Account & Billing",
+        "pages": [
+          "subscription-and-billing",
+          "payment-options",
+          "cancellation"
+        ]
+      },
+      {
+        "group": "Delivery & Access",
+        "pages": [
+          "download-and-setup",
+          "license-keys"
+        ]
+      },
+      {
+        "group": "FAQ",
+        "pages": [
+          "faq/orders",
+          "faq/refunds"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Instant digital software delivery after payment",
+    "License key management via account dashboard",
+    "Flexible subscription plans with easy cancellation",
+    "Multiple payment methods (PayPal, Visa, MasterCard, Apple Pay, Google Pay, etc.)",
+    "Trial option available for new users"
+  ],
+  "publicApiSurface": []
+}

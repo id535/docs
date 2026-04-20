@@ -1,0 +1,55 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "NinjaHackz",
+  "logo": {
+    "light": "https://media.brand.dev/58777987-f3a1-4df2-a394-337095e00d53.svg",
+    "dark": "https://media.brand.dev/58777987-f3a1-4df2-a394-337095e00d53.svg"
+  },
+  "favicon": "https://media.brand.dev/799a7f12-71d9-47a6-a2c9-b3e85142e844.svg",
+  "colors": {
+    "primary": "#7c7c7c",
+    "light": "#050505",
+    "dark": "#c4c4c4"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Get Started",
+      "href": "https://ninjahackz.com"
+    }
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "getting-started"
+        ]
+      },
+      {
+        "group": "Account & Billing",
+        "pages": [
+          "subscription-and-billing",
+          "payment-options",
+          "cancellation"
+        ]
+      },
+      {
+        "group": "Delivery & Access",
+        "pages": [
+          "download-and-setup",
+          "license-keys"
+        ]
+      },
+      {
+        "group": "FAQ",
+        "pages": [
+          "faq/orders",
+          "faq/refunds"
+        ]
+      }
+    ]
+  }
+}
