@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "mint",
   "name": "NinjaHackz",
   "logo": {
     "light": "https://media.brand.dev/58777987-f3a1-4df2-a394-337095e00d53.svg",
@@ -56,9 +56,12 @@
     ]
   },
   "background": {
-    "decoration": "windows"
+    "decoration": "gradient"
   },
   "appearance": {
     "default": "dark"
+  },
+  "banner": {
+    "dismissible": false
   }
 }
