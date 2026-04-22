@@ -1,0 +1,40 @@
+---
+title: Changelog
+description: Latest updates and improvements to NinjaHackz.
+---
+
+<Update label="2026-04-22" description="v5.0.2" tags={["Update"]}>
+  ## Updated game offsets and netvars
+
+  NinjaHackz now supports the latest CS2 update (January 22, 2026). If you were experiencing detection issues or crashes after the recent CS2 patch, update to v5.0.2 to restore full compatibility.
+</Update>
+
+<Update label="2026-04-09" description="v5.0.0" tags={["Feature", "Release"]}>
+  ## v5.0.0 — Major release
+
+  This is a major update with a revamped interface, better aim assist, improved overlay behavior, and significant performance gains.
+
+  ### New features
+
+  - **Redesigned aim assist UI** — The aim assist page now includes a hitbox visualization and spray pattern preview, making it easier to fine-tune your settings.
+  - **ESP preview in visuals** — You can now see a live preview of your ESP configuration directly in the visuals settings page.
+  - **Radar overlay improvements** — The radar is now pixel-perfect with smoother rendering, a new arrow indicator, and tunable sizing options.
+  - **Tooltips in aim assist settings** — Hover over any aim assist option to see a short explanation of what it does.
+
+  ### Updates
+
+  - **Smoother aim assist** — Aim smoothing has been reworked for more natural-feeling movement. Default FOV and smoothing values have been adjusted for a better out-of-the-box experience.
+  - **Better ESP smoothing** — ESP overlays now render more smoothly with reduced jitter.
+  - **Improved overlay in windowed and fullscreen windowed modes** — The cursor now releases properly when opening the menu in windowed or fullscreen windowed mode. A warning displays if you're running in exclusive fullscreen, where cursor release isn't supported.
+  - **More reliable CS2 detection** — Attaching to CS2 and detecting your display mode is now faster and more consistent, especially when launching the game after NinjaHackz is already running.
+  - **Updated UI styling** — The menu has a refreshed look with a new text logo, improved spacing, and snappier slider controls.
+  - **Display mode detection** — NinjaHackz now reads your CS2 display mode from the game config, preventing overlay conflicts and potential freezes.
+
+  ### Bug fixes
+
+  - Fixed a freeze that could occur when the display mode cache refreshed too frequently.
+  - Fixed an issue where the overlay could fail to attach on systems with multiple user sessions (e.g., Remote Desktop).
+  - Fixed FOV circle rendering being out of sync with the actual in-game view.
+
+  For setup instructions, see the [download and setup guide](/download-and-setup). If you have questions about your license, check [license keys](/license-keys).
+</Update>
