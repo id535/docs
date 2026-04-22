@@ -52,6 +52,12 @@
           "faq/orders",
           "faq/refunds"
         ]
+      },
+      {
+        "group": "Updates",
+        "pages": [
+          "whats-new"
+        ]
       }
     ]
   },
