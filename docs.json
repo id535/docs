@@ -12,7 +12,7 @@
   },
   "colors": {
     "primary": "#23A86E",
-    "light": "#ffffff",
+    "light": "#23A86E",
     "dark": "#23A86E"
   },
   "navbar": {
@@ -24,6 +24,10 @@
     "links": [
       {
         "label": "Home",
+        "href": "https://ninjahackz.com/"
+      },
+      {
+        "label": "Docs",
         "href": "/"
       },
       {
@@ -74,7 +78,8 @@
   "background": {
     "decoration": "gradient",
     "color": {
-      "dark": "#404040"
+      "dark": "#000000",
+      "light": "#ffffff"
     }
   },
   "appearance": {
