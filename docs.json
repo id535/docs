@@ -67,8 +67,4 @@
   "appearance": {
     "default": "dark"
   },
-  "banner": {
-    "content": "🚀 Latest updates are live! Check out the [Changelog](/changelog) for details.",
-    "dismissible": false
-  }
 }
