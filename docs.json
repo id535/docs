@@ -12,7 +12,7 @@
   },
   "colors": {
     "primary": "#23A86E",
-    "light": "#050505",
+    "light": "#000000",
     "dark": "#23A86E"
   },
   "navbar": {
@@ -65,6 +65,24 @@
     "decoration": "gradient"
   },
   "appearance": {
-    "default": "dark"
+    "default": "dark",
+    "strict": true
+  },
+  "banner": {
+    "dismissible": false
+  },
+  "styling": {
+    "codeblocks": "dark"
+  },
+  "thumbnails": {
+    "appearance": "dark"
+  },
+  "integrations": {
+    "ga4": {
+      "measurementId": "G-WG5ZEXGL5E"
+    },
+    "gtm": {
+      "tagId": "GTM-KF67QV8"
+    }
   }
 }
