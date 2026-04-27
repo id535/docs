@@ -72,7 +72,10 @@
     ]
   },
   "background": {
-    "decoration": "gradient"
+    "decoration": "gradient",
+    "color": {
+      "dark": "#404040"
+    }
   },
   "appearance": {
     "default": "dark",
