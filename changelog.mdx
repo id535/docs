@@ -3,6 +3,27 @@ title: Changelog
 description: Latest updates and improvements to NinjaHackz.
 ---
 
+<Update label="2026-04-27" description="v5.1.0" tags={["Feature", "Update"]}>
+  ## v5.1.0 — Team toggles, RCS rework, and Radar polish
+
+  This release adds finer control over teammate handling across ESP, Aim Assist, and Radar, refines recoil compensation, and improves accuracy on the latest CS2 build.
+
+  ### New features
+
+  - **Team toggles for ESP, Aim Assist, and Radar** — You can now independently choose whether teammates appear in your ESP overlay, are considered as targets by Aim Assist, and are drawn on the Radar. Toggles are available in each feature's settings panel and are saved with your config.
+  - **Separate Head Circle ESP toggle** — The head circle indicator is now its own option in the ESP settings, so you can enable it without turning on the rest of the head visuals.
+  - **Per-weapon RCS scaling** — Recoil Control Support now scales per weapon for more consistent compensation across rifles, SMGs, and pistols. Existing RCS settings are migrated automatically.
+
+  ### Updates
+
+  - **Improved Aim Assist logic** — Target selection and tracking have been refined for smoother, more reliable lock-on, especially at the edges of your FOV.
+  - **Updated bone indices and chains** — Bone data has been refreshed for the latest CS2 animation graph, restoring accurate ESP skeletons and Aim Assist targeting after the recent CS2 update.
+  - **Renamed Minimap to Radar** — The in-menu section previously labeled "Minimap" is now called "Radar" to match the rest of the UI. Your existing settings are preserved.
+  - **Updated game offsets** — Offsets and defaults have been refreshed for compatibility with the current CS2 build.
+
+  If you're upgrading, download the latest build from your [account dashboard](/download-and-setup). For help with your license, see [license keys](/license-keys).
+</Update>
+
 <Update label="2026-04-22" description="v5.0.2" tags={["Update"]}>
   ## Updated game offsets and netvars
 
