@@ -69,7 +69,8 @@
     "strict": true
   },
   "banner": {
-    "dismissible": false
+    "dismissible": false,
+    "content": "test"
   },
   "styling": {
     "codeblocks": "dark"
