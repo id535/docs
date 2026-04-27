@@ -20,7 +20,17 @@
       "type": "button",
       "label": "Get Started",
       "href": "https://ninjahackz.com"
-    }
+    },
+    "links": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Changelog",
+        "href": "/changelog"
+      }
+    ]
   },
   "navigation": {
     "groups": [
@@ -67,10 +77,6 @@
   "appearance": {
     "default": "dark",
     "strict": true
-  },
-  "banner": {
-    "dismissible": false,
-    "content": "test"
   },
   "styling": {
     "codeblocks": "dark"
