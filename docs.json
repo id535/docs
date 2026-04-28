@@ -11,9 +11,9 @@
     "dark": "https://media.brand.dev/799a7f12-71d9-47a6-a2c9-b3e85142e844.svg"
   },
   "colors": {
-    "primary": "#23A86E",
-    "light": "#23A86E",
-    "dark": "#23A86E"
+    "primary": "#23a86e",
+    "light": "#23a86e",
+    "dark": "#23a86e"
   },
   "navbar": {
     "primary": {
