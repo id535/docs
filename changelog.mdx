@@ -3,6 +3,26 @@ title: Changelog
 description: Latest updates and improvements to NinjaHackz.
 ---
 
+<Update label="2026-05-01" description="v5.2.0" tags={["Feature", "Update"]}>
+  ## v5.2.0 — Per-weapon aim profiles and config system
+
+  This release introduces a full per-weapon and per-class aim profile system, giving you fine-grained control over FOV, smoothness, and RCS strength for every weapon in CS2. The aim assist UI has been rebuilt around this new system.
+
+  ### New features
+
+  - **Per-weapon and per-class aim profiles** — Aim Assist settings (Outer FOV, Inner FOV, Smooth Factor, and RCS strength) are now configured independently per weapon class (rifles, SMGs, snipers, pistols, etc.) or per individual weapon. A tabbed profile editor in the Aim Assist page lets you switch between Global, By Class, and By Weapon modes.
+  - **Global aim profile fallback** — A global profile applies to any weapon not covered by a class or weapon-specific override, so you always have a sensible baseline without configuring every weapon individually.
+  - **Config save/load for profiles** — All aim profiles are persisted to and restored from your saved config automatically. Existing configs are migrated to the new format on first load.
+
+  ### Updates
+
+  - **Rebuilt Aim Assist UI** — The aim assist settings page has been redesigned around the new profile system with a tabbed editor and combo row layout. Legacy global aimbot sliders have been replaced.
+  - **RCS strength now profile-scoped** — Recoil Control Strength is now part of each aim profile rather than a standalone global setting, so RCS tuning follows your per-weapon or per-class configuration.
+  - **Updated game offsets** — Offsets and button bindings have been refreshed for the current CS2 build.
+  - **UI state reset on profile switch** — Switching between profile tabs correctly resets UI state to prevent stale values carrying over.
+
+</Update>
+
 <Update label="2026-04-27" description="v5.1.0" tags={["Feature", "Update"]}>
   ## v5.1.0 — Team toggles, RCS rework, and Radar polish
 
