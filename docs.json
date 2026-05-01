@@ -11,16 +11,30 @@
     "dark": "https://media.brand.dev/799a7f12-71d9-47a6-a2c9-b3e85142e844.svg"
   },
   "colors": {
-    "primary": "#23A86E",
-    "light": "#050505",
-    "dark": "#c4c4c4"
+    "primary": "#23a86e",
+    "light": "#23a86e",
+    "dark": "#23a86e"
   },
   "navbar": {
     "primary": {
       "type": "button",
       "label": "Get Started",
       "href": "https://ninjahackz.com"
-    }
+    },
+    "links": [
+      {
+        "label": "Home",
+        "href": "https://ninjahackz.com/"
+      },
+      {
+        "label": "Docs",
+        "href": "/"
+      },
+      {
+        "label": "Changelog",
+        "href": "/changelog"
+      }
+    ]
   },
   "navigation": {
     "groups": [
@@ -62,13 +76,28 @@
     ]
   },
   "background": {
-    "decoration": "gradient"
+    "decoration": "gradient",
+    "color": {
+      "dark": "#000000",
+      "light": "#ffffff"
+    }
   },
   "appearance": {
-    "default": "dark"
+    "default": "dark",
+    "strict": true
   },
-  "banner": {
-    "content": "🚀 Latest updates are live! Check out the [Changelog](/changelog) for details.",
-    "dismissible": false
+  "styling": {
+    "codeblocks": "dark"
+  },
+  "thumbnails": {
+    "appearance": "dark"
+  },
+  "integrations": {
+    "ga4": {
+      "measurementId": "G-WG5ZEXGL5E"
+    },
+    "gtm": {
+      "tagId": "GTM-KF67QV8"
+    }
   }
 }
