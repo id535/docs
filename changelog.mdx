@@ -3,26 +3,46 @@ title: Changelog
 description: Latest updates and improvements to NinjaHackz.
 ---
 
+<Update label="2026-05-01" description="v5.2.0" tags={["Feature", "Update"]}>
+  ## v5.2.0 — Per-weapon aim profiles and config system
 
-<Update label="2026-04-27" description="v5.1.0" tags={["Feature", "Update"]}>
-  ## Team toggles, smarter recoil control, and updated bones
-
-  This release adds per-feature teammate toggles, smarter per-weapon recoil control, and updated bone data for the latest CS2 animation graph.
+  This release introduces a full per-weapon and per-class aim profile system, giving you fine-grained control over FOV, smoothness, and RCS strength for every weapon in CS2. The aim assist UI has been rebuilt around this new system.
 
   ### New features
-  - **Teammate toggles for ESP, Aim Assist, and Radar** — Independently choose whether teammates appear on your ESP, are eligible for aim assist, and show as blips on the radar. Each feature now has its own **Include Teammates** / **Show Teammates** option, so you can enable team highlights on the radar while keeping aim assist limited to enemies.
-  - **Per-weapon recoil compensation** — Recoil control now applies a tuned compensation curve for each weapon (rifles, snipers, SMGs, LMGs, shotguns, and pistols), with a single global strength slider for personal preference.
-  - **Head Circle toggle** — The head circle is now its own toggle in the **Player ESP** settings, separate from the head box style, so you can enable or disable it independently.
-  - **Default secondary aim key** — Left Shift is now set as the default secondary aim assist hotkey out of the box.
+
+  - **Per-weapon and per-class aim profiles** — Aim Assist settings (Outer FOV, Inner FOV, Smooth Factor, and RCS strength) are now configured independently per weapon class (rifles, SMGs, snipers, pistols, etc.) or per individual weapon. A tabbed profile editor in the Aim Assist page lets you switch between Global, By Class, and By Weapon modes.
+  - **Global aim profile fallback** — A global profile applies to any weapon not covered by a class or weapon-specific override, so you always have a sensible baseline without configuring every weapon individually.
+  - **Config save/load for profiles** — All aim profiles are persisted to and restored from your saved config automatically. Existing configs are migrated to the new format on first load.
 
   ### Updates
-  - **Renamed Minimap to Radar** — The navigation tab and overlay are now called **Radar** for consistency with in-game terminology.
-  - **Updated bone data** — Bone indices and chains have been updated for the latest CS2 animation graph, improving skeleton ESP and aim accuracy on current player models.
-  - **Refined ESP labels** — ESP toggles and tooltips now refer to "players" rather than "enemies" since you can now opt into teammate overlays.
 
-  For configuration help, see [getting started](/getting-started). New to NinjaHackz? Start with the [download and setup guide](/download-and-setup).
+  - **Rebuilt Aim Assist UI** — The aim assist settings page has been redesigned around the new profile system with a tabbed editor and combo row layout. Legacy global aimbot sliders have been replaced.
+  - **RCS strength now profile-scoped** — Recoil Control Strength is now part of each aim profile rather than a standalone global setting, so RCS tuning follows your per-weapon or per-class configuration.
+  - **Updated game offsets** — Offsets and button bindings have been refreshed for the current CS2 build.
+  - **UI state reset on profile switch** — Switching between profile tabs correctly resets UI state to prevent stale values carrying over.
+
 </Update>
 
+<Update label="2026-04-27" description="v5.1.0" tags={["Feature", "Update"]}>
+  ## v5.1.0 — Team toggles, RCS rework, and Radar polish
+
+  This release adds finer control over teammate handling across ESP, Aim Assist, and Radar, refines recoil compensation, and improves accuracy on the latest CS2 build.
+
+  ### New features
+
+  - **Team toggles for ESP, Aim Assist, and Radar** — You can now independently choose whether teammates appear in your ESP overlay, are considered as targets by Aim Assist, and are drawn on the Radar. Toggles are available in each feature's settings panel and are saved with your config.
+  - **Separate Head Circle ESP toggle** — The head circle indicator is now its own option in the ESP settings, so you can enable it without turning on the rest of the head visuals.
+  - **Per-weapon RCS scaling** — Recoil Control Support now scales per weapon for more consistent compensation across rifles, SMGs, and pistols. Existing RCS settings are migrated automatically.
+
+  ### Updates
+
+  - **Improved Aim Assist logic** — Target selection and tracking have been refined for smoother, more reliable lock-on, especially at the edges of your FOV.
+  - **Updated bone indices and chains** — Bone data has been refreshed for the latest CS2 animation graph, restoring accurate ESP skeletons and Aim Assist targeting after the recent CS2 update.
+  - **Renamed Minimap to Radar** — The in-menu section previously labeled "Minimap" is now called "Radar" to match the rest of the UI. Your existing settings are preserved.
+  - **Updated game offsets** — Offsets and defaults have been refreshed for compatibility with the current CS2 build.
+
+  If you're upgrading, download the latest build from your [account dashboard](/download-and-setup). For help with your license, see [license keys](/license-keys).
+</Update>
 
 <Update label="2026-04-22" description="v5.0.2" tags={["Update"]}>
   ## v5.0.2 — Updated game offsets and netvars
