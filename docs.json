@@ -72,6 +72,16 @@
         "pages": [
           "changelog"
         ]
+      },
+      {
+        "group": "Troubleshooting",
+        "pages": []
+      },
+      {
+        "group": "Troubleshooting",
+        "pages": [
+          "troubleshooting/hags"
+        ]
       }
     ]
   },
