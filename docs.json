@@ -68,19 +68,15 @@
         ]
       },
       {
-        "group": "Changelog",
-        "pages": [
-          "changelog"
-        ]
-      },
-      {
-        "group": "Troubleshooting",
-        "pages": []
-      },
-      {
         "group": "Troubleshooting",
         "pages": [
           "troubleshooting/hags"
+        ]
+      },
+      {
+        "group": "Changelog",
+        "pages": [
+          "changelog"
         ]
       }
     ]
