@@ -31,9 +31,3 @@ Follow the exact same steps above and turn the toggle **back ON**, then restart 
 ## Why This Helps
 
 Hardware-Accelerated GPU Scheduling changes how Windows shares the GPU between applications. When CS2 is very GPU intensive, it can cause external overlays (like ours) to experience major presentation delays. Disabling HAGS falls back to the legacy scheduler which is more compatible with our DComp-based overlay.
-
-## Optional
-
-You can keep HAGS enabled, but you may need to lower `MaxRenderFPS` in the menu (30–60 FPS) and reduce the number of active visual features on heavy maps.
-
-If you continue having issues after this change, please send us your PerfLog for further assistance.
