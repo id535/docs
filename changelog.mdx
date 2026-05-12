@@ -3,6 +3,36 @@ title: Changelog
 description: Latest updates and improvements to NinjaHackz.
 ---
 
+<Update label="2026-05-12" description="v5.3.0" tags={["Feature", "Update"]}>
+  ## v5.3.0 — Precise visibility, smoother ESP & faster gameplay
+
+  This update brings significantly more accurate enemy visibility detection, an improved GUI with custom keybind support, better overlay layering, and improved startup.
+
+  ### New features
+  - **Precise visibility detection** — Enemies are now detected far more reliably through walls and complex geometry using Trace Shape technique instead of m_bSpottedByMask for cleaner ESP and safer aim-assist targeting.  
+
+  ### Updates
+  - **Custom menu keybind** — You can now set any key you prefer to open and close the cheat menu.
+  - **Improved menu UI** — New two-column layout with improved alignment, cleaner styling, and better overall usability.  
+  - **Faster active features** — Aim assist, recoil control, triggerbot and other gameplay cheats now respond slightly quicker.  
+  - **DirectComposition overlay** — Enabled by default (when supported) for superior layering and priority on top of CS2.  
+  - **Improved startup** — Faster and more reliable process attachment with clearer feedback.
+
+  ### Bug fixes
+
+  - General stability and crash resilience improvements.
+</Update>
+
+<Update label="2026-05-08" description="v5.2.1" tags={["Update"]}>
+  ## v5.2.1 — Game compatibility update
+
+  This is a maintenance release to ensure full compatibility with the latest CS2 update.
+
+  ### Updates
+
+  - Updated memory offsets for latest CS2 patch compatibility
+</Update>
+
 <Update label="2026-05-01" description="v5.2.0" tags={["Feature", "Update"]}>
   ## v5.2.0 — Per-weapon aim profiles and config system
 
@@ -20,7 +50,6 @@ description: Latest updates and improvements to NinjaHackz.
   - **RCS strength now profile-scoped** — Recoil Control Strength is now part of each aim profile rather than a standalone global setting, so RCS tuning follows your per-weapon or per-class configuration.
   - **Updated game offsets** — Offsets and button bindings have been refreshed for the current CS2 build.
   - **UI state reset on profile switch** — Switching between profile tabs correctly resets UI state to prevent stale values carrying over.
-
 </Update>
 
 <Update label="2026-04-27" description="v5.1.0" tags={["Feature", "Update"]}>
@@ -84,6 +113,4 @@ description: Latest updates and improvements to NinjaHackz.
   - Fixed a freeze that could occur when the display mode cache refreshed too frequently.
   - Fixed an issue where the overlay could fail to attach on systems with multiple user sessions (e.g., Remote Desktop).
   - Fixed FOV circle rendering being out of sync with the actual in-game view.
-
-  For setup instructions, see the [download and setup guide](/download-and-setup). If you have questions about your license, check [license keys](/license-keys).
 </Update>
