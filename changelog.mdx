@@ -6,26 +6,33 @@ description: "Latest updates and improvements to NinjaHackz."
 # NinjaHackz CS2 Cheats Changelog: Latest Updates
 
 <Update label="2026-05-19" tags={["Feature","Update"]} description="v5.4.0">
-  ## v5.4.0 — Radar polish, new sounds & refined aim assist
+  ## v5.4.0 — Major aim assist modernization, new sounds & radar improvements
 
-  This update brings a cleaner radar experience, an expanded library of custom hit and kill sounds with instant previews, and a more reliable, modernized aim assist system.
+  This release focuses on making aim assist more reliable and natural, adding a big library of custom sounds, and polishing the radar & bomb timer experience.
 
   ### New features
 
-  - **Custom hit & kill sounds** — Browse and instantly preview from a large new collection of satisfying sounds directly in the menu.
-  - **Unified bomb radar icons** — Planted, dropped, and carrier bombs now use consistent, easy-to-read icons with a clean black border.
+  - **Expanded custom hit & kill sounds** — Large new collection of satisfying sounds. Instantly preview any sound directly from the menu when changing your selection.
+  - **Health priority targeting** — Aim assist now prioritizes lower-health targets for smarter focus fire.
+  - **Target stickiness** — Once locked, aim assist stays on target more consistently through movement and brief obstructions.
+  - **Velocity prediction** — Anticipates enemy movement (80ms lead) for better tracking on strafing targets.
+  - **Unified bomb radar icons** — Planted, dropped, and carrier bombs now use consistent, clear icons with a thin black border for better readability.
 
   ### Updates
 
-  - **Smarter bomb timer & radar** — Ghost dropped bombs no longer linger. Added more precise bomb timing data and reorganized toggles for clarity.
-  - **Modern aim assist** — Switched to reliable hold-based aiming with target stickiness, health-based priority, and velocity prediction. Smoothing now adapts dynamically to your aim speed.
-  - **Sharper ESP** — Visibility checks are more consistent, ESP feels snappier, and head circle sizing is stable. Teammate colors now strictly match in-game spotted status.
-  - **Better UI scaling** — Full per-monitor DPI awareness keeps menus and overlays crisp on any Windows display scale.
-  - **Sounds category** — New dedicated section in Extras for managing hit and kill sounds.
+  - **Fully modernized aim assist** — Now strictly hold-based (removed legacy toggle/always modes). Dynamic smoothing that adapts to your angular speed. Better AimBot \+ RCS coordination to avoid double compensation. Retuned per-weapon values.
+  - **Removed TriggerBot, AimLock & AutoShot** — These legacy features have been fully removed to simplify the cheat and improve overall stability.
+  - **ESP overhaul for stability** — Completely removed the previous TraceShape visibility system (which could cause instability). Now relies on reliable spotted mask detection. Teammates only show as visible when the game actually marks them spotted. Snappier overall feel and consistent head circle sizing.
+  - **Improved radar & bomb timer** — Fixed ghost dropped bombs that could linger after pickup. Better bomb state tracking and timing data. Reorganized bomb-related toggles into the Radar page for clarity.
+  - **Per-monitor DPI awareness** — Menus and overlays now scale correctly and stay crisp on any Windows display scaling setting.
+  - **New Sounds category** — Dedicated section in the Extras page for managing hit and kill sounds.
+  - **Team check respect in aiming** — Aim assist now properly respects your team check setting.
 
   ### Bug fixes
 
-  - Numerous stability and responsiveness improvements from extensive cleanup and refactoring.
+  - Major stability improvements from removing unstable visibility code and dead features.
+  - Numerous responsiveness and edge-case fixes across aim, ESP, and radar.
+  - Cleaner UI spacing and layout consistency.
 
   Download the latest build from your [account dashboard](/download-and-setup).
 </Update>
