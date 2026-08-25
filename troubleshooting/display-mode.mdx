@@ -1,0 +1,30 @@
+---
+title: "How to fix exclusive fullscreen"
+description: "NinjaHackz does not support exclusive fullscreen. Set CS2 to Windowed or Fullscreen Windowed so the overlay can attach."
+sidebarTitle: "Display mode"
+keywords: ["exclusive fullscreen", "windowed", "overlay banner"]
+---
+
+NinjaHackz is a GPU overlay. It attaches in **Windowed** or **Fullscreen Windowed**. Exclusive fullscreen is not supported. The app shows a banner when CS2 is in exclusive fullscreen.
+
+## How to change display mode
+
+<Steps>
+  <Step title="Open CS2 video settings">
+    In CS2, open **Settings** → **Video**.
+  </Step>
+  <Step title="Set the display mode">
+    Set display mode to **Windowed** or **Fullscreen Windowed**. Do not use exclusive fullscreen.
+  </Step>
+  <Step title="Apply, then reattach">
+    Apply the change. If NinjaHackz is already running, wait for it to attach again, or close and rerun the `.exe`.
+  </Step>
+</Steps>
+
+<Check>
+  The overlay menu opens with **N** and draws over CS2.
+</Check>
+
+<Note>
+  Fullscreen Windowed looks like fullscreen but still allows the overlay. That is the usual choice.
+</Note>
