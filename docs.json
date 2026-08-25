@@ -41,8 +41,22 @@
       {
         "group": "Get Started",
         "pages": [
+          "index",
           "introduction",
-          "getting-started"
+          "getting-started",
+          "requirements"
+        ]
+      },
+      {
+        "group": "Using NinjaHackz",
+        "pages": [
+          "using/overview",
+          "using/aim-assist",
+          "using/visuals",
+          "using/radar",
+          "using/crosshair",
+          "using/extras",
+          "using/beta"
         ]
       },
       {
@@ -70,7 +84,11 @@
       {
         "group": "Troubleshooting",
         "pages": [
-          "troubleshooting/hags"
+          "troubleshooting/display-mode",
+          "troubleshooting/anti-cheat",
+          "troubleshooting/hags",
+          "troubleshooting/after-a-game-update",
+          "troubleshooting/in-app-updates"
         ]
       },
       {
