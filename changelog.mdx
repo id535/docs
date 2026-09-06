@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-description: "Latest updates to NinjaHackz."
+description: "Latest updates and improvements to NinjaHackz."
 ---
 
 # NinjaHackz CS2 Cheats Changelog: Latest Updates
@@ -8,219 +8,221 @@ description: "Latest updates to NinjaHackz."
 <Update label="2026-08-04" tags={["Feature","Update"]} description="v5.6.0">
   ## v5.6.0 — Beta chams with improved stability
 
-  External dual-pass chams are on the Beta page. Latex and Flat materials only, for more reliable visuals.
+  External dual-pass chams are now available on the Beta page, with a focus on stability and cleaner materials.
 
-  ### New
+  ### New features
 
-  - **Beta chams** — External dual-pass chams on the Beta page (Latex and Flat only)
-  - Session-only enable, plus head flicker mitigation for more consistent rendering
+  - **Beta chams** — External dual-pass chams available on the Beta page. Includes Latex and Flat materials only for reliable visuals.
+  - Session-only enable and head flicker mitigation for more consistent rendering.
 
   ### Updates
 
-  - Test new chams in a local bot match first
-  - Updated game offsets and schema for the current CS2 build
-  - Stability fixes around the chams lifecycle
+  - Always test new chams features in a local bot match first.
+  - Updated game offsets and schema for the current CS2 build.
+  - General stability improvements around chams lifecycle.
 </Update>
 
 <Update label="2026-07-10" tags={["Feature","Update"]} description="v5.5.0">
-  ## v5.5.0 — Fortnite-style aim assist with magnetism and stickiness
+  ## v5.5.0 — Fortnite-style aim assist with magnetism & stickiness
 
-  Aim Assist now has magnetism and stickiness so it locks and stays on target better.
+  Major aim assist upgrade introducing magnetism and advanced stickiness for more natural, sticky, and effective tracking.
 
-  ### New
+  ### New features
 
-  - **Magnetism** — Pulls your crosshair toward the target bone from anywhere inside your aim bubble
-  - **Stickiness** — Lock-on only when on the hitbox, with friction, residual slam corrections, velocity following, and smart breakout resistance
-  - New settings for magnetism strength, stickiness friction, and aim bubble radius, in per-weapon profiles
+  - **Magnetism** — Automatically pulls your crosshair toward the target bone from anywhere within your configurable aim bubble for faster target acquisition.
+  - **Stickiness** — Smart lock-on that activates only when on the hitbox, with friction to slow your movement, residual slam corrections, and velocity following to stay on moving targets. Includes smart breakout resistance.
+  - New aim assist settings for magnetism strength, stickiness friction, and aim bubble radius — fully integrated into per-weapon profiles.
 
   ### Updates
 
-  - Refreshed Aim Assist UI for the new controls
-  - Per-weapon and per-class profiles now include magnetism and stickiness
-  - Better legitbot integration and aim responsiveness
-  - Config and UI cleanups
+  - Completely refreshed Aim Assist UI with new controls, better organization, and enhanced widgets for the new mechanics.
+  - Expanded per-weapon and per-class aim profiles to include magnetism and stickiness tuning.
+  - Improved legitbot integration and overall aim responsiveness.
+  - Various refinements to config system and UI components for smoother experience.
 </Update>
 
 <Update label="2026-07-09" tags={["Update"]} description="v5.4.3">
-  ## v5.4.3 — Bone, aim punch, and bomb timer restoration after CS2 update
+  ## v5.4.3 — Bone, aim punch & bomb timer restoration after CS2 update
 
-  Restores function after CS2 patch build 24122613.
+  This release restores full functionality and stability after the latest CS2 patch (build 24122613).
 
-  ### Bug fixes
+  ### Bug Fixes
 
-  - **Bone/ESP skeletons** — Bone data reading fixed after skeleton layout changes. ESP and aim assist targeting are stable again
-  - **Aim punch / RCS** — Aim punch cache read from the correct services path again
-  - **Bomb timer** — Planted C4 detection and timer logic reworked. Timer stops on defuse or explode, shows remaining time, and does not linger after the bomb is gone
-  - More robust planted-bomb detection across memory layouts
+  - **Restored bone/ESP skeletons** — Fixed bone data reading after changes to the skeleton layout. ESP and aim assist targeting are now stable again.
+  - **Fixed aim punch / RCS** — Aim punch cache is now correctly read from the proper services path, restoring reliable recoil control.
+  - **Reworked bomb timer** — Overhauled planted C4 detection and timer logic. The timer now correctly stops on defuse or explode, shows accurate remaining time, and no longer lingers after the bomb is gone.
+  - Improved robustness across different memory layouts for planted bomb detection.
 
   ### Updates
 
-  - Updated offsets, button bindings, and schema for the current CS2 build
-  - Stability and compatibility fixes after the game update
+  - Updated offsets, button bindings, and schema data for the current CS2 build.
+  - General stability and compatibility improvements after the game update.
 </Update>
 
 <Update label="2026-05-29" tags={["Update"]} description="v5.4.2">
-  ## v5.4.2 — Weapon icon fix, persistent settings, and ESP stability after CS2 patch
+  ## v5.4.2 — Weapon icon fix, persistent settings & ESP stability after CS2 patch
 
-  Quick fix for issues after recent CS2 updates.
+  Quick maintenance release fixing a handful of issues that surfaced after the recent CS2 updates.
 
-  ### Bug fixes
+  ### Bug Fixes
 
-  - M4A4 weapon icon in ESP (non-silenced M4A4 used the wrong glyph)
-  - "Pause After Kill" now persists across restarts
-  - Stable bone projection and skeleton rendering in ESP
+  - Fixed M4A4 weapon icon in ESP (non-silenced M4A4 was using the wrong glyph and displaying incorrectly)
+  - "Pause After Kill" setting now properly persists in your config across restarts/sessions
+  - Restored stable bone projection & skeleton rendering in ESP
 </Update>
 
 <Update label="2026-05-21" tags={["Update"]} description="v5.4.1">
-  ## v5.4.1 — Higher data refresh rates, decoupled aim assist, and improved overlay rendering
+  ## v5.4.1 — Higher data refresh rates, decoupled aim assist and i**mproved overlay rendering**
 
-  Game data reads more often. Aim assist timing is separate from the main loop. The overlay renders more efficiently in some cases.
+  This update improves how frequently game data is read and separates aim assist timing from the main update loop. The overlay now also renders more efficiently in certain conditions. Expect snappier aim tracking, more responsive visuals, and smoother overall performance.
 
   ### Updates
 
-  - **Higher rate readers** — Player positions and visibility update more often
-  - **Decoupled aim rate** — Aim assist runs on its own pace
-  - **Improved overlay FPS** — Overlay renders more efficiently
+  - **Higher rate readers** — Game information such as player positions and visibility is now updated more frequently for faster reactions.
+  - **Decoupled aim rate** — Aim assist calculations run at their own optimized pace, improving consistency and reducing perceived input delay.
+  - **Improved overlay FPS** — The in-game overlay now renders more efficiently, delivering smoother performance with higher frame rates.
 </Update>
 
 <Update label="2026-05-19" tags={["Feature","Update"]} description="v5.4.0">
-  ## v5.4.0 — Aim assist modernization, new sounds, and radar improvements
+  ## v5.4.0 — Major aim assist modernization, new sounds & radar improvements
 
-  Aim assist is more reliable, there is a larger custom sound set, and radar plus bomb timer get polish.
+  This release focuses on making aim assist more reliable and natural, adding a big library of custom sounds, and polishing the radar & bomb timer experience.
 
-  ### New
+  ### New features
 
-  - **Custom hit and kill sounds** — Larger collection of hit and kill sounds
-  - **Priority targeting** — Smarter target priority for aim assist
-  - **Target stickiness** — Once locked, stays on target through movement and brief obstructions
-  - **Velocity prediction** — 80ms lead on strafing targets
-  - **Bomb radar icons** — C4 indicators for planted, dropped, and carrier
+  - **Custom hit & kill sounds** — Large new collection of satisfying hit and kill sounds.
+  - **Priority targeting** — Aim assist now prioritizes targets smarter.
+  - **Target stickiness** — Once locked, aim assist stays on target more consistently through movement and brief obstructions.
+  - **Velocity prediction** — Anticipates enemy movement (80ms lead) for better tracking on strafing targets.
+  - **Bomb radar icons** — Added C4 indicators to the radar for planted, dropped bombs, and the bomb carrier.
 
   ### Updates
 
-  - Aim assist is hold-based only (legacy toggle/always modes removed). Dynamic smoothing by angular speed. Better AimBot + RCS coordination. Retuned per-weapon values
-  - TraceShape visibility system temporarily removed (it caused instability)
-  - **Per-monitor DPI awareness** — Menus and overlays scale correctly on Windows display scaling
+  - **Fully modernized aim assist** — Now strictly hold-based (removed legacy toggle/always modes). Dynamic smoothing that adapts to your angular speed. Better AimBot \+ RCS coordination to avoid double compensation. Retuned per-weapon values.
+  - **Reversed TraceShape system** — Temporarily removed the previous TraceShape visibility system (which causes instability).
+  - **Per-monitor DPI awareness** — Menus and overlays now scale correctly and stay crisp on any Windows display scaling setting.
 
   ### Bug fixes
 
-  - Stability fixes
-  - Responsiveness and edge-case fixes across aim, ESP, and radar
-  - Cleaner UI spacing and layout
+  - Major stability improvements.
+  - Numerous responsiveness and edge-case fixes across aim, ESP, and radar.
+  - Cleaner UI spacing and layout consistency.
 
   Download the latest build from your [account dashboard](/download-and-setup).
 </Update>
 
 <Update label="2026-05-12" tags={["Feature","Update"]} description="v5.3.0">
-  ## v5.3.0 — Precise visibility, smoother ESP, and faster gameplay
+  ## v5.3.0 — Precise visibility, smoother ESP & faster gameplay
 
-  More accurate enemy visibility, custom menu keybind, better overlay layering, and faster startup.
+  This update brings significantly more accurate enemy visibility detection, an improved GUI with custom keybind support, better overlay layering, and improved startup.
 
-  ### New
+  ### New features
 
-  - **Precise visibility detection** — Trace Shape instead of m\_bSpottedByMask, for cleaner ESP and safer aim-assist targeting through walls and complex geometry
+  - **Precise visibility detection** — Enemies are now detected far more reliably through walls and complex geometry using Trace Shape technique instead of m\_bSpottedByMask for cleaner ESP and safer aim-assist targeting.
 
   ### Updates
 
-  - **Custom menu keybind** — Any key to open and close the menu
-  - **Menu UI** — Two-column layout, cleaner styling
-  - Active features respond slightly faster (aim assist, recoil control, triggerbot, and related)
-  - DirectComposition overlay on by default when supported, for better layering over CS2
-  - Faster, more reliable process attachment with clearer feedback
+  - **Custom menu keybind** — You can now set any key you prefer to open and close the cheat menu.
+  - **Improved menu UI** — New two-column layout with improved alignment, cleaner styling, and better overall usability.
+  - **Faster active features** — Aim assist, recoil control, triggerbot and other gameplay cheats now respond slightly quicker.
+  - **DirectComposition overlay** — Enabled by default (when supported) for superior layering and priority on top of CS2.
+  - **Improved startup** — Faster and more reliable process attachment with clearer feedback.
 
   ### Bug fixes
 
-  - Stability and crash resilience
+  - General stability and crash resilience improvements.
 </Update>
 
 <Update label="2026-05-08" tags={["Update"]} description="v5.2.1">
   ## v5.2.1 — Game compatibility update
 
-  Maintenance release for the latest CS2 update.
+  This is a maintenance release to ensure full compatibility with the latest CS2 update.
 
   ### Updates
 
-  - Updated memory offsets for the latest CS2 patch
+  - Updated memory offsets for latest CS2 patch compatibility
 </Update>
 
 <Update label="2026-05-01" tags={["Feature","Update"]} description="v5.2.0">
   ## v5.2.0 — Per-weapon aim profiles and config system
 
-  Per-weapon and per-class aim profiles for FOV, smoothness, and RCS strength. Aim Assist UI rebuilt around this.
+  This release introduces a full per-weapon and per-class aim profile system, giving you fine-grained control over FOV, smoothness, and RCS strength for every weapon in CS2. The aim assist UI has been rebuilt around this new system.
 
-  ### New
+  ### New features
 
-  - **Per-weapon and per-class aim profiles** — Outer FOV, Inner FOV, Smooth Factor, and RCS strength per class or per weapon. Tabbed editor: Global, By Class, By Weapon
-  - **Global aim profile fallback** — Applies when no class or weapon override exists
-  - **Config save/load for profiles** — Profiles save with your config. Existing configs migrate on first load
+  - **Per-weapon and per-class aim profiles** — Aim Assist settings (Outer FOV, Inner FOV, Smooth Factor, and RCS strength) are now configured independently per weapon class (rifles, SMGs, snipers, pistols, etc.) or per individual weapon. A tabbed profile editor in the Aim Assist page lets you switch between Global, By Class, and By Weapon modes.
+  - **Global aim profile fallback** — A global profile applies to any weapon not covered by a class or weapon-specific override, so you always have a sensible baseline without configuring every weapon individually.
+  - **Config save/load for profiles** — All aim profiles are persisted to and restored from your saved config automatically. Existing configs are migrated to the new format on first load.
 
   ### Updates
 
-  - Rebuilt Aim Assist UI around the profile system. Legacy global aimbot sliders removed
-  - RCS strength is part of each profile, not a separate global setting
-  - Updated game offsets and button bindings for the current CS2 build
-  - Switching profile tabs resets UI state so stale values do not carry over
+  - **Rebuilt Aim Assist UI** — The aim assist settings page has been redesigned around the new profile system with a tabbed editor and combo row layout. Legacy global aimbot sliders have been replaced.
+  - **RCS strength now profile-scoped** — Recoil Control Strength is now part of each aim profile rather than a standalone global setting, so RCS tuning follows your per-weapon or per-class configuration.
+  - **Updated game offsets** — Offsets and button bindings have been refreshed for the current CS2 build.
+  - **UI state reset on profile switch** — Switching between profile tabs correctly resets UI state to prevent stale values carrying over.
 </Update>
 
 <Update label="2026-04-27" tags={["Feature","Update"]} description="v5.1.0">
   ## v5.1.0 — Team toggles, RCS rework, and Radar polish
 
-  Finer teammate control across ESP, Aim Assist, and Radar. Recoil compensation refined. Accuracy fixes for the latest CS2 build.
+  This release adds finer control over teammate handling across ESP, Aim Assist, and Radar, refines recoil compensation, and improves accuracy on the latest CS2 build.
 
-  ### New
+  ### New features
 
-  - **Team toggles for ESP, Aim Assist, and Radar** — Choose separately whether teammates show in ESP, are Aim Assist targets, and appear on Radar. Saved with your config
-  - **Separate Head Circle ESP toggle** — Head circle without the rest of the head visuals
-  - **Per-weapon RCS scaling** — Recoil Control Support scales per weapon. Existing RCS settings migrate automatically
+  - **Team toggles for ESP, Aim Assist, and Radar** — You can now independently choose whether teammates appear in your ESP overlay, are considered as targets by Aim Assist, and are drawn on the Radar. Toggles are available in each feature's settings panel and are saved with your config.
+  - **Separate Head Circle ESP toggle** — The head circle indicator is now its own option in the ESP settings, so you can enable it without turning on the rest of the head visuals.
+  - **Per-weapon RCS scaling** — Recoil Control Support now scales per weapon for more consistent compensation across rifles, SMGs, and pistols. Existing RCS settings are migrated automatically.
 
   ### Updates
 
-  - Aim Assist target selection and tracking refined, especially at FOV edges
-  - Updated bone indices and chains for the latest CS2 animation graph
-  - Minimap renamed to Radar in the menu. Settings preserved
-  - Updated game offsets for the current CS2 build
+  - **Improved Aim Assist logic** — Target selection and tracking have been refined for smoother, more reliable lock-on, especially at the edges of your FOV.
+  - **Updated bone indices and chains** — Bone data has been refreshed for the latest CS2 animation graph, restoring accurate ESP skeletons and Aim Assist targeting after the recent CS2 update.
+  - **Renamed Minimap to Radar** — The in-menu section previously labeled "Minimap" is now called "Radar" to match the rest of the UI. Your existing settings are preserved.
+  - **Updated game offsets** — Offsets and defaults have been refreshed for compatibility with the current CS2 build.
 
-  If you're upgrading, download the latest build from your [account dashboard](/download-and-setup). For license help, see [license keys](/license-keys).
+  If you're upgrading, download the latest build from your [account dashboard](/download-and-setup). For help with your license, see [license keys](/license-keys).
 </Update>
 
 <Update label="2026-04-22" tags={["Update"]} description="v5.0.2">
   ## v5.0.2 — Updated game offsets and netvars
 
-  Supports the CS2 update from January 22, 2026. If you hit errors or crashes after that patch, update to v5.0.2.
+  NinjaHackz now supports the latest CS2 update (January 22, 2026). If you were experiencing errors or crashes after the recent CS2 patch, update to v5.0.2 to restore full compatibility.
 </Update>
 
 <Update label="2026-04-21" tags={["Update"]} description="v5.0.1">
-  ## v5.0.1 — Compatibility update
+  ## v5.0.1 — Compatibility Update
 
-  - Updated memory offsets for the latest CS2 patch
-  - Reworked Aim Assist settings UI layout
-  - Fixed overlay freezing when switching between fullscreen and windowed
+  **What's new**
+
+  - Updated memory offsets for latest CS2 patch compatibility
+  - Reworked Aim Assist settings UI layout for clarity
+  - Fixed overlay freezing when switching between fullscreen and windowed display modes
 </Update>
 
 <Update label="2026-04-09" tags={["Feature","Release"]} description="v5.0.0">
   ## v5.0.0 — Major release
 
-  Revamped interface, better aim assist, improved overlay behavior, and performance gains.
+  This is a major update with a revamped interface, better aim assist, improved overlay behavior, and significant performance gains.
 
-  ### New
+  ### New features
 
-  - **Redesigned aim assist UI** — Hitbox visualization and spray pattern preview
-  - **ESP preview in visuals** — Live preview of your ESP config on the visuals page
-  - **Radar overlay** — Pixel-perfect rendering, arrow indicator, tunable size
-  - **Tooltips on aim assist options**
+  - **Redesigned aim assist UI** — The aim assist page now includes a hitbox visualization and spray pattern preview, making it easier to fine-tune your settings.
+  - **ESP preview in visuals** — You can now see a live preview of your ESP configuration directly in the visuals settings page.
+  - **Radar overlay improvements** — The radar is now pixel-perfect with smoother rendering, a new arrow indicator, and tunable sizing options.
+  - **Tooltips in aim assist settings** — Hover over any aim assist option to see a short explanation of what it does.
 
   ### Updates
 
-  - Aim smoothing reworked. Default FOV and smoothing adjusted
-  - ESP overlays render with less jitter
-  - Windowed and fullscreen windowed — Cursor releases when opening the menu. Warning if you're in exclusive fullscreen (cursor release unsupported)
-  - Faster, more consistent CS2 attach and display mode detection, including when the game starts after NinjaHackz
-  - UI refresh — Text logo, spacing, snappier sliders
-  - Display mode read from the game config to avoid overlay conflicts and freezes
+  - **Smoother aim assist** — Aim smoothing has been reworked for more natural-feeling movement. Default FOV and smoothing values have been adjusted for a better out-of-the-box experience.
+  - **Better ESP smoothing** — ESP overlays now render more smoothly with reduced jitter.
+  - **Improved overlay in windowed and fullscreen windowed modes** — The cursor now releases properly when opening the menu in windowed or fullscreen windowed mode. A warning displays if you're running in exclusive fullscreen, where cursor release isn't supported.
+  - **More reliable CS2 detection** — Attaching to CS2 and detecting your display mode is now faster and more consistent, especially when launching the game after NinjaHackz is already running.
+  - **Updated UI styling** — The menu has a refreshed look with a new text logo, improved spacing, and snappier slider controls.
+  - **Display mode detection** — NinjaHackz now reads your CS2 display mode from the game config, preventing overlay conflicts and potential freezes.
 
   ### Bug fixes
 
-  - Freeze when the display mode cache refreshed too often
-  - Overlay fail to attach with multiple user sessions (e.g. Remote Desktop)
-  - FOV circle out of sync with the in-game view
+  - Fixed a freeze that could occur when the display mode cache refreshed too frequently.
+  - Fixed an issue where the overlay could fail to attach on systems with multiple user sessions (e.g., Remote Desktop).
+  - Fixed FOV circle rendering being out of sync with the actual in-game view.
 </Update>
