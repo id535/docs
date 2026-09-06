@@ -84,6 +84,7 @@
       {
         "group": "Troubleshooting",
         "pages": [
+          "troubleshooting/crash-or-wont-start",
           "troubleshooting/display-mode",
           "troubleshooting/anti-cheat",
           "troubleshooting/hags",
