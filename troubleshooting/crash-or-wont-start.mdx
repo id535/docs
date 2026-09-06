@@ -1,0 +1,60 @@
+---
+title: "How to fix crashes and attach failures"
+description: "If NinjaHackz will not start, crashes after you join a match, or the overlay will not attach, run as administrator, close FACEIT, use the latest dashboard build, verify CS2 files, and check HAGS."
+sidebarTitle: "Crashes and attach"
+keywords:
+  - "crash"
+  - "will not start"
+  - "attach"
+  - "failed to get modules address"
+  - "verify integrity"
+  - "run as administrator"
+---
+
+If NinjaHackz will not start, closes after you join a match, or the overlay never attaches to CS2, work through this list in order.
+
+## Quick checklist
+
+<Steps>
+  <Step title="Run as administrator">
+    Right-click the NinjaHackz `.exe` and choose **Run as administrator**. Allow the Windows prompt if it appears. See [Download and setup](/download-and-setup).
+  </Step>
+  <Step title="Close FACEIT and similar anti-cheat">
+    FACEIT-style anti-cheat is not supported while NinjaHackz runs. Fully quit it from the system tray, then start NinjaHackz again. See [Anti-cheat](/troubleshooting/anti-cheat).
+  </Step>
+  <Step title="Use the latest dashboard build">
+    Open the [account dashboard](https://ninjahackz.com/dashboard/), download NinjaHackz from **Downloads**, and run that `.exe`. Do not reuse an old file from email or Discord. See [In-app updates](/troubleshooting/in-app-updates).
+  </Step>
+  <Step title="Load CS2 fully first">
+    Start CS2 and wait until you reach the main menu. Then start NinjaHackz (or restart it) so it can find the game.
+  </Step>
+  <Step title="Verify CS2 game files">
+    In Steam, open **Counter-Strike 2** → **Properties** → **Installed Files** → **Verify integrity of game files**. When Steam finishes, launch CS2 again, then NinjaHackz.
+  </Step>
+  <Step title="Set a supported display mode">
+    Use **Windowed** or **Fullscreen Windowed**. Exclusive fullscreen blocks the overlay. See [Display mode](/troubleshooting/display-mode).
+  </Step>
+  <Step title="If the overlay feels laggy">
+    Disable Hardware-accelerated GPU scheduling (HAGS), then restart Windows. See [Overlay lag (HAGS)](/troubleshooting/hags).
+  </Step>
+</Steps>
+
+## After a CS2 update
+
+If Aim Assist, Visuals, or Radar stop working right after a CS2 patch, enable **Use Built-in Offsets** and download the newest build. See [After a game update](/troubleshooting/after-a-game-update).
+
+## Still stuck
+
+<AccordionGroup>
+  <Accordion title="Access denied / FACEIT">
+    Close FACEIT and similar anti-cheat completely, then try again. See [Anti-cheat](/troubleshooting/anti-cheat).
+  </Accordion>
+
+  <Accordion title="Offset scan failed">
+    Follow [After a game update](/troubleshooting/after-a-game-update), including **Use Built-in Offsets** and a fresh dashboard download.
+  </Accordion>
+
+  <Accordion title="Need support">
+    Use the in-app copy-info action if it is available, then contact support through the [support portal](https://ninjahackz.com/support-portal/) with that text and what you already tried.
+  </Accordion>
+</AccordionGroup>
