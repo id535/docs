@@ -1,10 +1,9 @@
 ---
-title: "Fix Overlay Lag - Disable HAGS"
-description: "Resolve severe overlay lag and D3D_Present spikes by disabling Hardware-Accelerated GPU Scheduling"
+title: "How to fix overlay lag (HAGS)"
+description: "Disable Hardware-accelerated GPU scheduling (HAGS) if NinjaHackz overlay lag or D3D_Present spikes stay high even when CS2 FPS is fine."
 sidebarTitle: "Overlay Lag (HAGS)"
+keywords: ["hags", "overlay lag", "d3d present"]
 ---
-
-# Fix Overlay Lag - Disable Hardware-Accelerated GPU Scheduling (HAGS)
 
 If you're experiencing noticeable overlay lag (high D3D_Present times) even when CS2 is running at high FPS, disabling Hardware-Accelerated GPU Scheduling (HAGS) can significantly improve overlay performance.
 
@@ -24,11 +23,11 @@ After restarting, launch CS2 + NinjaHackz. The overlay should feel significantly
   Disabling HAGS is currently the most reliable fix for external overlay performance.
 </Note>
 
-## How to Re-enable HAGS (if needed)
+## How to re-enable HAGS (if needed)
 
 Follow the exact same steps above and toggle the setting **back ON**, then restart your PC again.
 
-## Why This Fixes the Lag
+## Why this fixes the lag
 
 Hardware-Accelerated GPU Scheduling (HAGS) lets the GPU manage its own command queues and scheduling directly. While this is beneficial for many modern games, it creates problems for external overlays like NinjaHackz.
 
