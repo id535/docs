@@ -1,6 +1,6 @@
 ---
 title: "How to fix crashes and attach failures"
-description: "If NinjaHackz will not start, crashes after you join a match, or the overlay will not attach, run as administrator, close FACEIT, use the latest dashboard build, verify CS2 files, and check HAGS."
+description: "If NinjaHackz will not start, crashes after you join a match, or the overlay will not attach, run as administrator, close FACEIT, use the latest dashboard build, verify CS2 files, check HAGS, and use crash package consent on next launch."
 sidebarTitle: "Crashes and attach"
 keywords:
   - "crash"
@@ -9,6 +9,8 @@ keywords:
   - "failed to get modules address"
   - "verify integrity"
   - "run as administrator"
+  - "crash package"
+  - "APPDATA"
 ---
 
 If NinjaHackz will not start, closes after you join a match, or the overlay never attaches to CS2, work through this list in order.
@@ -43,6 +45,19 @@ If NinjaHackz will not start, closes after you join a match, or the overlay neve
 
 If Aim Assist, Visuals, or Radar stop working right after a CS2 patch, enable **Use Built-in Offsets** and download the newest build. See [After a game update](/troubleshooting/after-a-game-update).
 
+## Crash packages
+
+When NinjaHackz crashes, it can write a package under `%APPDATA%\NinjaHackz\crashes\<guid>\`. The next launch shows a consent prompt:
+
+- **Send** — Opens the local crash folder so you can share files with support. Remote upload is not available yet.
+- **Don't send** — Skip this package.
+- **Open folder** — Open the package folder in Explorer.
+- **Never ask** — Stop showing the prompt for future crashes.
+
+<Note>
+  Use **Open folder** or **Send** when support asks for crash files. Attach only what they request.
+</Note>
+
 ## Still stuck
 
 <AccordionGroup>
@@ -55,6 +70,6 @@ If Aim Assist, Visuals, or Radar stop working right after a CS2 patch, enable **
   </Accordion>
 
   <Accordion title="Need support">
-    Use the in-app copy-info action if it is available, then contact support through the [support portal](https://ninjahackz.com/support-portal/) with that text and what you already tried.
+    Use the in-app copy-info action if it is available. If a crash package prompt appears, use **Open folder** or **Send** to reach the files under `%APPDATA%\NinjaHackz\crashes\`. For logs, see [After a game update](/troubleshooting/after-a-game-update). Contact support through the [support portal](https://ninjahackz.com/support-portal/) with that material and what you already tried.
   </Accordion>
 </AccordionGroup>

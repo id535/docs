@@ -2,7 +2,14 @@
 title: "What to do after a CS2 update"
 description: "If the offset scan fails after a CS2 update, use Built-in Offsets, then contact support with Copy to Clipboard if the overlay still will not attach."
 sidebarTitle: "After a game update"
-keywords: ["cs2 update", "built-in offsets", "offset scan", "failed to get modules address"]
+keywords:
+  - "cs2 update"
+  - "built-in offsets"
+  - "offset scan"
+  - "failed to get modules address"
+  - "nh.log"
+  - "verbose logging"
+  - "Ctrl+Alt+L"
 ---
 
 A CS2 update can change memory offsets. NinjaHackz may fail to scan, and Aim Assist, Visuals, or Radar can stop working until you switch fallback or download a new build.
@@ -27,7 +34,7 @@ A CS2 update can change memory offsets. NinjaHackz may fail to scan, and Aim Ass
 
 <AccordionGroup>
   <Accordion title="Support asked for logs">
-    If support asks for logs, follow the steps they send. Collect only what they request. Do not look for hidden debug tools unless they tell you to.
+    Logging stays quiet by default. The log file is `%APPDATA%\NinjaHackz\logs\nh.log` (info and above; rotates at 5 MB and keeps 3 files). Press **Ctrl+Alt+L** to toggle verbose file logging when support needs more detail. Send only the files they request.
   </Accordion>
 
   <Accordion title="You see Failed to get modules address">
