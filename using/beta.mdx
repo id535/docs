@@ -1,15 +1,27 @@
 ---
-title: "How to use Beta chams"
-description: "Enable Chams for a session only. Choose Material Latex or Flat, Players Enemies only or All players, and Max Distance. Test in a local bot match."
+title: "How to use Beta"
+description: "Enable Chams and TraceShape on Beta. Settings persist across launches. Use Smoke Occlusion with TraceShape. Test in a local bot match."
 sidebarTitle: "Beta"
-keywords: ["beta chams", "latex", "flat"]
+keywords:
+  - "beta chams"
+  - "traceshape"
+  - "smoke occlusion"
+  - "latex"
+  - "flat"
 ---
 
-**Beta** holds experimental chams. They can break after a CS2 update. Enable them only for the current session. The setting is not saved.
+**Beta** holds experimental chams and TraceShape visibility. They can break after a CS2 update. Test in a local bot match first.
 
 <Warning>
-  Beta chams are experimental. Test in a local bot match first. They may stop working after a CS2 update.
+  Beta features are experimental. Test in a local bot match first. They may stop working after a CS2 update.
 </Warning>
+
+## How settings save
+
+Chams and TraceShape settings save with your config, including **Enable Chams**, **Enable TraceShape**, and **Smoke Occlusion**.
+
+- After a clean quit, those enables restore the next time you launch NinjaHackz.
+- If NinjaHackz crashes or you kill the process while a Beta toggle is on, the next launch starts that toggle off (safe-off).
 
 ## How to enable chams
 
@@ -17,17 +29,29 @@ keywords: ["beta chams", "latex", "flat"]
   <Step title="Open Beta">
     Open the menu with **N**, then open the **Beta** tab.
   </Step>
-  <Step title="Enable Chams for this session">
-    Turn on **Enable Chams**. This enable is session-only. You need to turn it on again the next time you launch NinjaHackz.
+  <Step title="Enable Chams">
+    Turn on **Enable Chams**. Chams use an external dual-pass scene material override and replace Wall-Hack while they are on.
   </Step>
   <Step title="Pick a Material">
     Choose **Material**: **Latex** or **Flat**.
   </Step>
   <Step title="Choose who is drawn">
-    Set **Players** to **Enemies only**, or **All players**. Set **Max Distance** so far-away models are skipped.
+    Set **Players** to **Enemies only**, or **All players**.
   </Step>
 </Steps>
 
+Chams range follows **Wall-Hack Range** on **Visuals**. Open **Visuals** to change the meter cutoff.
+
 <Note>
-  If chams look wrong after a CS2 update, turn them off and see [After a game update](/troubleshooting/after-a-game-update).
+  Chams are drawn in the game. **Bypass Screen Capture** does not hide them.
+</Note>
+
+## How to use TraceShape
+
+**Enable TraceShape** uses the game engine line of sight to filter visible players. It replaces `m_bSpottedByMask` for aim VisibleCheck and ESP colors when it is available.
+
+Turn on **Smoke Occlusion** when TraceShape is on if you want active smoke volumes treated as line-of-sight blockers.
+
+<Note>
+  If chams or TraceShape look wrong after a CS2 update, turn them off and see [After a game update](/troubleshooting/after-a-game-update).
 </Note>
