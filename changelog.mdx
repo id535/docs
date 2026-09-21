@@ -3,6 +3,32 @@ title: "Changelog"
 description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Assist, Visuals, Radar, Beta chams, and CS2 compatibility updates."
 ---
 
+<Update label="2026-09-21" tags={["Feature","Update"]} description="v5.7.0">
+  ## v5.7.0 — Kit-aware defuse timer, Neutral menu & Beta persistence
+
+  This release adds a kit-aware defuse countdown under the bomb bar, ships the Neutral overlay menu, and makes Beta chams and TraceShape settings persist safely across launches.
+
+  ### New features
+
+  - **Kit-aware defuse timer** — When the bomb is being defused, a countdown under the bomb bar shows how long the defuse will take with or without a kit.
+  - **TraceShape smoke blocking** — Optional setting to treat active smoke as a line-of-sight blocker when TraceShape visibility is on.
+  - **Neutral overlay menu** — Rebuilt settings UI with clearer cards, quieter chrome, a separate Config page, and Account Plan (Lifetime/Monthly) without a Renews row.
+
+  ### Updates
+
+  - **Wall-Hack Range** — Visuals range control renamed from Render Range. Your saved distance still applies.
+  - **Beta settings persistence** — Beta chams and TraceShape now save across clean exits. If CS2 or NinjaHackz exits uncleanly while they were on, they start off next launch (safe-off).
+  - TraceShape visibility ignores debris for cleaner player visibility through clutter.
+  - Menu polish: even setting rows, full-card hover, quieter loading spinner, and clearer Account links.
+
+  ### Bug fixes
+
+  - **Chams flicker** — Fixed visible/occluded color flashing when multiple draws overlapped.
+  - Fixed a case where a saved Wall-Hack Range of 30 m could load as a much larger distance.
+
+  Download the latest build from your [account dashboard](https://ninjahackz.com/dashboard/).
+</Update>
+
 <Update label="2026-08-04" tags={["Feature","Update"]} description="v5.6.0">
   ## v5.6.0 — Beta chams with improved stability
 
