@@ -56,7 +56,8 @@
           "using/radar",
           "using/crosshair",
           "using/extras",
-          "using/beta"
+          "using/beta",
+          "using/config"
         ]
       },
       {
