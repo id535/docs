@@ -3,6 +3,32 @@ title: "Changelog"
 description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Assist, Visuals, Radar, Beta chams, and CS2 compatibility updates."
 ---
 
+<Update label="2026-09-23" tags={["Feature","Update"]} description="v5.7.1">
+  ## v5.7.1 — Rush Hour compatibility, carried-item chams & menu scale
+
+  This release restores the overlay after the 23 Sep CS2 Rush Hour build, adds **Carried Items** chams for held weapons and gear, and fixes menu scale so the whole settings UI resizes cleanly.
+
+  ### New features
+
+  - **Carried Items chams** — On the Beta page, paint held weapons, grenades, and the C4 with their own colour. Carried weapons draw through walls in the item colour (not through smoke).
+
+  ### Updates
+
+  - **Rush Hour offsets** — Refreshed game offsets and signatures so the overlay, chams, and TraceShape work with the 23 Sep CS2 build.
+  - **Menu UI Scale** — Scaling now applies to the sidebar, rows, controls, padding, fonts, and in-menu previews together, without flicker while you drag the slider. ESP text and screen-anchored HUD cards stay at screen size.
+  - **Launch CS2** — Launching from the loader starts CS2 with your own Steam launch options.
+  - Menu polish: clearer sidebar labels, sharper crosshair preview snap, and closing the menu when you click outside is on by default.
+  - Out-of-range saved values for aim FOV, sound volumes, crosshair size, radar numerics, UI scale, max render FPS, and pause after kill now snap into the menu ranges when a config loads.
+
+  ### Bug fixes
+
+  - **TraceShape through grates** — Players behind grates, scaffolds, chain-link, and similar see-through brushes now count as visible again for TraceShape ESP and aim checks.
+  - Fixed a crash when chams painted held items.
+  - Spectator gear is no longer painted when you are watching someone else.
+
+  Download the latest build from your [account dashboard](https://ninjahackz.com/dashboard/).
+</Update>
+
 <Update label="2026-09-21" tags={["Feature","Update"]} description="v5.7.0">
   ## v5.7.0 — Kit-aware defuse timer, Neutral menu & TraceShape return
 
