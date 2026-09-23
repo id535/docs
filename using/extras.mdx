@@ -1,12 +1,14 @@
 ---
 title: "How to use Extras"
-description: "Configure Bunny Hop, Head Level Marker, Cash Display, hit and kill sounds, Bomb Timer with kit-aware defuse, Menu Toggle Key, Bypass Screen Capture, and the render cap."
+description: "Configure Bunny Hop, cash display, kit-aware Bomb Timer, sounds, Menu Toggle Key, Close on click outside, UI Scale, Bypass Screen Capture, and Render Cap."
 sidebarTitle: "Extras"
 keywords:
   - "extras"
   - "bypass screen capture"
   - "bunny hop"
   - "bomb timer"
+  - "ui scale"
+  - "close on click outside"
 ---
 
 Use **Extras** for movement, HUD helpers, audio, the menu key, capture hiding, and overlay FPS. Open the menu with **N**, then open the **Extras** tab.
@@ -16,15 +18,20 @@ Use **Extras** for movement, HUD helpers, audio, the menu key, capture hiding, a
 - **Bunny Hop** — Automate jump timing while you hold **Space**.
 - **Head Level Marker** — Draw a marker at head height.
 - **Cash Display** — Show money on the overlay.
+- **Show cash spent** — When **Cash Display** is on, show round spend next to cash.
 - **Bomb Timer** — Show remaining time when the bomb is planted. While someone is defusing, a second row under the bomb bar shows **Defuse** time with **kit** or **no kit**.
 
 ## Sounds
 
-Enable **Hit Sound** and **Kill Sound** if you want audio cues on damage and eliminations. Pick the clips you can recognize quickly.
+Pick a **Hit Sound** and **Kill Sound** (choose **None** to disable). Set **Hit Sound Volume** and **Kill Sound Volume** so the cues stay clear without drowning out the game.
 
-## Menu toggle key
+## Menu
 
-**Menu Toggle Key** defaults to **N**. Click the bind and press the key you want. Use a key that does not conflict with CS2.
+**Menu Toggle Key** defaults to **N**. Click the bind and press the key you want. Use a key that does not conflict with CS2 or your aim binds.
+
+Turn on **Close on click outside** to hide the menu when you click the overlay outside the menu.
+
+Set **UI Scale** to resize the menu. Windows display scaling is separate.
 
 ## Bypass screen capture
 
@@ -32,7 +39,7 @@ Turn on **Bypass Screen Capture** to hide the overlay from OBS and similar captu
 
 ## Render cap
 
-Set the overlay render cap to **60 Hz**, **100 Hz**, **144 Hz**, **200 Hz**, **240 Hz**, or **No Limit**. The default is **144 Hz**. Lower the cap if the overlay stutters on your GPU.
+Set the overlay **Render Cap** to **60 Hz**, **100 Hz**, **144 Hz**, **200 Hz**, **240 Hz**, or **No Limit**. The default is **144 Hz**. Lower the cap if the overlay stutters on your GPU.
 
 <Tip>
   If the overlay still feels laggy after you set a render cap, disable HAGS. See [Fix overlay lag (HAGS)](/troubleshooting/hags).

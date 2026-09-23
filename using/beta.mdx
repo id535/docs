@@ -1,9 +1,10 @@
 ---
 title: "How to use Beta"
-description: "Enable Chams and TraceShape on Beta. Settings persist across launches. Use Smoke Occlusion with TraceShape. Test in a local bot match."
+description: "Enable Chams and TraceShape on Beta. Optional Carried Items paints held weapons and the bomb. Settings persist with safe-off. Test in a local bot match."
 sidebarTitle: "Beta"
 keywords:
   - "beta chams"
+  - "carried items"
   - "traceshape"
   - "smoke occlusion"
   - "latex"
@@ -18,9 +19,10 @@ keywords:
 
 ## How settings save
 
-Chams and TraceShape settings save with your config, including **Enable Chams**, **Enable TraceShape**, and **Smoke Occlusion**.
+Chams and TraceShape settings save with your config, including **Enable Chams**, **Carried Items**, **Enable TraceShape**, and **Smoke Occlusion**.
 
-- After a clean quit, those enables restore the next time you launch NinjaHackz.
+- After a clean quit while CS2 is still running, those enables restore the next time you launch NinjaHackz.
+- If CS2 closes while the overlay is attached, **Enable Chams** turns off and that off state is saved.
 - If NinjaHackz crashes or you kill the process while a Beta toggle is on, the next launch starts that toggle off (safe-off).
 
 ## How to enable chams
@@ -30,15 +32,17 @@ Chams and TraceShape settings save with your config, including **Enable Chams**,
     Open the menu with **N**, then open the **Beta** tab.
   </Step>
   <Step title="Enable Chams">
-    Turn on **Enable Chams**. Chams use an external dual-pass scene material override and replace Wall-Hack while they are on.
+    Turn on **Enable Chams**. Chams use an external dual-pass scene material override and replace Wall-Hack while they are on. The left color on that row is visible players. The right color is players behind a wall.
   </Step>
   <Step title="Pick a Material">
     Choose **Material**: **Latex** or **Flat**.
   </Step>
-  <Step title="Choose who is drawn">
-    Set **Players** to **Enemies only**, or **All players**.
+  <Step title="Optional Carried Items">
+    Turn on **Carried Items** to paint weapons, grenades, and the bomb those players carry. Set the item color on that row. Dropped guns stay unpainted. Your own weapon stays unpainted.
   </Step>
 </Steps>
+
+Who is painted depends on the match type. Competitive and casual paint enemies. Deathmatch paints everyone. There is no separate Players control on this page.
 
 Chams range follows **Wall-Hack Range** on **Visuals**. Open **Visuals** to change the meter cutoff.
 
@@ -48,9 +52,13 @@ Chams range follows **Wall-Hack Range** on **Visuals**. Open **Visuals** to chan
 
 ## How to use TraceShape
 
+Open the **Visibility** section on the same **Beta** page.
+
 **Enable TraceShape** uses the game engine line of sight to filter visible players for aim visibility checks and ESP colors when it is available.
 
 Turn on **Smoke Occlusion** when TraceShape is on if you want active smoke volumes treated as line-of-sight blockers.
+
+**Status** on that section shows whether TraceShape is off, scanning, waiting for a match, ready, or disabled.
 
 <Note>
   If chams or TraceShape look wrong after a CS2 update, turn them off and see [After a game update](/troubleshooting/after-a-game-update).
