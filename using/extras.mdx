@@ -31,7 +31,7 @@ Pick a **Hit Sound** and **Kill Sound** (choose **None** to disable). Set **Hit 
 
 Turn on **Close on click outside** to hide the menu when you click the overlay outside the menu.
 
-Set **UI Scale** to resize the menu. Windows display scaling is separate.
+Set **UI Scale** to resize the menu. Menu text (including child pages) rasterizes at the scale you set for sharper glyphs when you release the slider. Windows display scaling is separate.
 
 ## Bypass screen capture
 
@@ -39,7 +39,7 @@ Turn on **Bypass Screen Capture** to hide the overlay from OBS and similar captu
 
 ## Render cap
 
-Set the overlay **Render Cap** to **60 Hz**, **100 Hz**, **144 Hz**, **200 Hz**, **240 Hz**, or **No Limit**. The default is **144 Hz**. Lower the cap if the overlay stutters on your GPU.
+Set the overlay **Render Cap** to **60 Hz**, **100 Hz**, **144 Hz**, **200 Hz**, **240 Hz**, or **No Limit**. The default is **144 Hz**. Lower the cap if the overlay stutters on your GPU. **No Limit** still follows your monitor refresh rate — a composition overlay cannot outrun the panel.
 
 <Tip>
   If the overlay still feels laggy after you set a render cap, disable HAGS. See [Fix overlay lag (HAGS)](/troubleshooting/hags).
