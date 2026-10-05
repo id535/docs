@@ -1,35 +1,46 @@
 ---
 title: "How to use Radar"
-description: "Enable Radar, match Radar HUD Size and Radar Map Zoom to the CS2 radar, then set offsets, blip size, and Bomb on Radar."
+description: "Enable Radar Overlay or Show on in-game radar, match Radar HUD Size and Radar Map Zoom, then set offsets, blip size, Off-radar arrows, and Bomb on Radar."
 sidebarTitle: "Radar"
 keywords:
   - "radar"
   - "bomb on radar"
   - "hud size"
+  - "off-radar arrows"
+  - "in-game radar"
 ---
 
-Use **Radar** to draw a map overlay that tracks players and the bomb. Open the menu with **N**, then open the **Radar** tab.
+Use **Radar** to draw enemy blips over CS2's radar, or to mark enemies on CS2's own radar. Open the menu with **N**, then open the **Radar** tab.
 
-## How to set up Radar
+## Radar Overlay
 
 <Steps>
-  <Step title="Enable Radar">
-    Turn on **Enable Radar**. Radar stays off until this is on.
+  <Step title="Enable Radar Overlay">
+    Turn on **Enable Radar Overlay** to draw enemy blips over CS2's radar. This turns off **Show on in-game radar**.
   </Step>
   <Step title="Match CS2 radar">
     Set **Radar HUD Size** and **Radar Map Zoom** so the overlay matches the in-game CS2 radar.
   </Step>
   <Step title="Align with offsets">
-    Use offsets to shift the radar until it sits on the CS2 HUD.
+    Use **Offset X**, **Offset Y**, and **Scale Adjust** until the overlay sits on the CS2 HUD.
   </Step>
-  <Step title="Set blip size">
-    Adjust blip size so player dots are readable without covering the map.
+  <Step title="Set Blip Size">
+    Adjust **Blip Size** so player dots are readable without covering the map.
   </Step>
 </Steps>
 
-## Extra Radar options
+## Extra overlay options
 
-- **Bomb on Radar** — Show bomb position on the radar.
+- **Off-radar arrows** — Edge arrows for enemies outside the current radar radius.
+- **Bomb on Radar** — Show planted and dropped C4 on the radar.
+
+## In-game Radar
+
+**Show on in-game radar** marks enemies on CS2's own radar. It writes game memory and turns off **Enable Radar Overlay**.
+
+<Warning>
+  Prefer **Enable Radar Overlay** unless you need the native radar marks. Memory writes are riskier than an overlay.
+</Warning>
 
 <Note>
   Teammate filtering is automatic. In normal team modes Radar shows enemies only. In deathmatch, workshop/custom, and free-for-all, Radar draws all players.

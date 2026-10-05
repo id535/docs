@@ -1,8 +1,13 @@
 ---
 title: "How to use Aim Assist"
-description: "Turn on Aim Assist, set Primary Bind and Secondary Bind, pick a profile, then tune Bubble Size, Strength, Stickiness, hitboxes, and Recoil Compensation."
+description: "Turn on Aim Assist, set binds, choose Assist level, tune Bubble Size, Strength, Stickiness, hitboxes, and Recoil Compensation, and optionally enable TraceShape."
 sidebarTitle: "Aim Assist"
-keywords: ["aim assist", "bubble size", "recoil compensation"]
+keywords:
+  - "aim assist"
+  - "bubble size"
+  - "recoil compensation"
+  - "traceshape"
+  - "assist level"
 ---
 
 Use **Aim Assist** to pull your aim toward selected hitboxes while you hold a bind. Open the menu with **N**, then open the **Aim Assist** tab.
@@ -14,23 +19,28 @@ Use **Aim Assist** to pull your aim toward selected hitboxes while you hold a bi
     Turn on the master **Aim Assist** toggle. Nothing in this tab runs until that is on.
   </Step>
 
-<Note>
-  When the master **Aim Assist** toggle is off, Aim Assist does nothing. Binds, bubble, hitboxes, and Recoil Compensation do not run. **Visuals** and other tabs can still draw if those toggles are on — turn each feature off on its own tab if you want it fully disabled.
-</Note>
+  <Note>
+    When the master **Aim Assist** toggle is off, Aim Assist does nothing. Binds, bubble, hitboxes, and Recoil Compensation do not run. **Visuals** and other tabs can still draw if those toggles are on — turn each feature off on its own tab if you want it fully disabled.
+  </Note>
 
   <Step title="Set your binds">
     **Primary Bind** defaults to **Left Mouse**. **Secondary Bind** defaults to **Left Shift**. Hold a bind to apply Aim Assist.
   </Step>
-  <Step title="Pick a profile">
-    Choose **Global**, **By Class**, or **By Weapon**. Global is the baseline. Class and weapon profiles override it for those guns.
+
+  <Step title="Set Assist level">
+    Under **Aim Profiles**, set **Assist level** to **Subtle**, **Medium**, or **Strong**. That level is the baseline every gun starts from.
+  </Step>
+
+  <Step title="Optional per-gun or class tuning">
+    Use **Tune a specific gun or class** when you want an override. Open a row to edit that profile, or remove the row to erase the override.
   </Step>
 </Steps>
 
 ## How to tune tracking
 
-- **Bubble Size** — How large the aim bubble is around the target.
+- **Bubble Size** — How far Aim Assist can reach. Larger means a wider pull area.
 - **Display Aim Bubble** — Draw the bubble on the overlay so you can see the range.
-- **Strength** — How hard Aim Assist pulls toward the target.
+- **Strength** — How hard the crosshair is pulled toward the target inside the bubble.
 - **Stickiness** — How firmly Aim Assist stays on the hitbox after it locks.
 
 ## How to choose hitboxes
@@ -45,16 +55,24 @@ Enable the bones you want Aim Assist to prefer:
 ## Other Aim Assist options
 
 - **Target Through Walls** — Keep targeting when the player is not visible.
-- **Pause After Kill** — Stop aiming briefly after a kill.
+- **Pause After Kill** — **Off**, **0.5 s**, **1 s**, or **3 s**.
 - **Recoil Compensation** — Counter weapon spray while Aim Assist is held.
+
+## Fast Visibility Filter
+
+**Fast Visibility Filter** is on **Aim Assist** and writes CS2 game memory when TraceShape is on.
+
+- **Enable TraceShape** — Use the game engine line of sight for aim and ESP colors when it is available. Faster and more exact than the spotted mask.
+- **Smoke Occlusion** — When TraceShape is on, treat active smokes as blocking line of sight.
+- **Status** — Shows whether TraceShape is off, scanning, waiting for a match, ready, or disabled.
+
+<Warning>
+  Test TraceShape in a local bot match first. If NinjaHackz crashes while TraceShape is on, the next launch starts it off (safe-off).
+</Warning>
 
 <Note>
   Teammate filtering is automatic. In normal team modes Aim Assist targets enemies only. In deathmatch, workshop/custom, and free-for-all, it can target all players.
 </Note>
-
-<Warning>
-  Upgrading from an older Aim Assist build to the 5.5 schema v2 can reset Aim Assist settings once. Re-apply your profiles after that upgrade.
-</Warning>
 
 <Tip>
   Test in a local bot match before you change Strength and Stickiness in a live game.

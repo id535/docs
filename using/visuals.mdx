@@ -1,23 +1,26 @@
 ---
 title: "How to use Visuals"
-description: "Turn on Wall-Hack, set Wall-Hack Range from 1 to 156 m, then enable Frame, Skeleton, Head Circle, Player Tag, Distance, Health Bar and Armor Bar, Active Weapon, and Ammo Count."
+description: "Turn on Wall-Hack and Wall-Hack Range, draw Frame, Skeleton, and info ESPs, and optionally enable beta Chams with Carried Items and Dropped Items."
 sidebarTitle: "Visuals"
 keywords:
   - "visuals"
   - "wall-hack"
   - "wall-hack range"
+  - "chams"
+  - "carried items"
+  - "dropped items"
 ---
 
-Use **Visuals** to draw player information on the overlay. Open the menu with **N**, then open the **Visuals** tab.
+Use **Visuals** to draw player overlays and optional beta chams. Open the menu with **N**, then open the **Visuals** tab.
 
-## How to enable Visuals
+## How to enable overlay Visuals
 
 <Steps>
   <Step title="Turn on Wall-Hack">
-    Enable **Wall-Hack**. Other Visuals options draw on top of that.
+    Enable **Wall-Hack**. Other overlay Visuals options draw on top of that.
   </Step>
   <Step title="Set Wall-Hack Range">
-    Set **Wall-Hack Range** between **1** and **156** m. Players beyond that distance are not drawn. Beta chams use the same meter cutoff.
+    Set **Wall-Hack Range** between **1** and **156** m. Players beyond that distance are not drawn. Chams use the same meter cutoff.
   </Step>
 </Steps>
 
@@ -35,13 +38,44 @@ Enable only the elements you want:
 - **Player Tag** — Name or tag.
 - **Distance** — Distance to the player.
 - **Health Bar** and **Armor Bar** — Current health and armor.
-- **Active Weapon** — Weapon the player is holding.
-- **Ammo Count** — Magazine count when it is available.
+- **Active Weapon** — Equipped weapon icon.
+- **Ammo Count** — Remaining ammo bar under the frame when it is available.
 
 <Tip>
   Start with **Frame**, **Head Circle**, and **Health Bar**, then add **Skeleton** or **Player Tag** if you still need them.
 </Tip>
 
+## Chams
+
+**Chams** sits on **Visuals** and is marked beta. It paints players in the game scene and writes CS2 game memory.
+
+<Warning>
+  Test chams in a local bot match first. They may stop working after a CS2 update.
+</Warning>
+
+<Steps>
+  <Step title="Enable Chams">
+    Turn on **Enable Chams**. The left color on that row is visible players. The right color is players behind a wall.
+  </Step>
+  <Step title="Pick a Material">
+    Choose **Material**: **Latex** or **Flat**.
+  </Step>
+  <Step title="Optional Carried Items">
+    Turn on **Carried Items** to paint weapons, grenades, and the bomb those players carry. Set the item color on that row.
+  </Step>
+  <Step title="Optional Dropped Items">
+    Turn on **Dropped Items** to paint weapons, grenades, kits, and the dropped or planted bomb through walls. Set the color on that row.
+  </Step>
+</Steps>
+
+While **Enable Chams** is on, **Frame**, **Skeleton**, and **Head Circle** stay hidden. Chams range follows **Wall-Hack Range**.
+
+Chams and TraceShape settings save with your config. After a clean quit while CS2 is still running, those enables restore on the next launch. If CS2 closes while the overlay is attached, **Enable Chams** turns off and that off state is saved. If NinjaHackz crashes or you kill the process while chams or TraceShape is on, the next launch starts that toggle off (safe-off).
+
 <Note>
-  Visuals follow CS2 display mode. Use **Windowed** or **Fullscreen Windowed**. See [Display mode](/troubleshooting/display-mode).
+  Chams are drawn in the game. **Bypass Screen Capture** does not hide them.
+</Note>
+
+<Note>
+  Visuals follow CS2 display mode. Use **Windowed** or **Fullscreen Windowed** for the best experience. See [Display mode](/troubleshooting/display-mode).
 </Note>
