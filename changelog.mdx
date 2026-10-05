@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Assist, Visuals, Radar, Beta chams, and CS2 compatibility updates."
+description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Assist, Visuals, Radar, Chams, and CS2 compatibility updates."
 ---
 
 <Update label="2026-09-26" tags={["Update"]} description="v5.7.2">
@@ -89,23 +89,23 @@ description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Ass
   - General stability improvements around chams lifecycle.
 </Update>
 
-<Update label="2026-07-10" tags={["Feature","Update"]} description="v5.5.0">
-  ## v5.5.0 — Fortnite-style aim assist with magnetism & stickiness
+<Update label="2026-08-04" tags={["Feature","Update"]} description="v5.5.0">
+  ## v5.5.0 — Aim assist with Strength and Stickiness
 
-  Major aim assist upgrade introducing magnetism and advanced stickiness for more natural, sticky, and effective tracking.
+  Major Aim Assist upgrade with Strength pull and Stickiness for more natural tracking.
 
   ### New features
 
-  - **Magnetism** — Automatically pulls your crosshair toward the target bone from anywhere within your configurable aim bubble for faster target acquisition.
-  - **Stickiness** — Smart lock-on that activates only when on the hitbox, with friction to slow your movement, residual slam corrections, and velocity following to stay on moving targets. Includes smart breakout resistance.
-  - New aim assist settings for magnetism strength, stickiness friction, and aim bubble radius — fully integrated into per-weapon profiles.
+  - **Strength** — Pulls your crosshair toward the target bone from within your configurable aim bubble for faster target acquisition.
+  - **Stickiness** — Smart lock-on that activates when on the hitbox, with friction to slow your movement and stay on moving targets.
+  - New Aim Assist settings for Strength, Stickiness, and Bubble Size — integrated into per-weapon profiles.
 
   ### Updates
 
-  - Completely refreshed Aim Assist UI with new controls, better organization, and enhanced widgets for the new mechanics.
-  - Expanded per-weapon and per-class aim profiles to include magnetism and stickiness tuning.
-  - Improved legitbot integration and overall aim responsiveness.
-  - Various refinements to config system and UI components for smoother experience.
+  - Refreshed Aim Assist UI with new controls and clearer organization for the new mechanics.
+  - Expanded per-weapon and per-class aim profiles to include Strength and Stickiness tuning.
+  - Improved Aim Assist responsiveness.
+  - Config and UI refinements for a smoother experience.
 </Update>
 
 <Update label="2026-07-09" tags={["Update"]} description="v5.4.3">
@@ -113,20 +113,20 @@ description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Ass
 
   This release restores full functionality and stability after the latest CS2 patch (build 24122613).
 
+  ### Updates
+
+  - Updated offsets, button bindings, and schema data for the current CS2 build.
+  - General stability and compatibility improvements after the game update.
+
   ### Bug fixes
 
   - **Restored bone/ESP skeletons** — Fixed bone data reading after changes to the skeleton layout. ESP and aim assist targeting are now stable again.
   - **Fixed aim punch / RCS** — Aim punch cache is now correctly read from the proper services path, restoring reliable recoil control.
   - **Reworked bomb timer** — Overhauled planted C4 detection and timer logic. The timer now correctly stops on defuse or explode, shows accurate remaining time, and no longer lingers after the bomb is gone.
   - Improved robustness across different memory layouts for planted bomb detection.
-
-  ### Updates
-
-  - Updated offsets, button bindings, and schema data for the current CS2 build.
-  - General stability and compatibility improvements after the game update.
 </Update>
 
-<Update label="2026-05-29" tags={["Update"]} description="v5.4.2">
+<Update label="2026-06-03" tags={["Update"]} description="v5.4.2">
   ## v5.4.2 — Weapon icon fix, persistent settings & ESP stability after CS2 patch
 
   Quick maintenance release fixing a handful of issues that surfaced after the recent CS2 updates.
@@ -138,7 +138,7 @@ description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Ass
   - Restored stable bone projection & skeleton rendering in ESP
 </Update>
 
-<Update label="2026-05-21" tags={["Update"]} description="v5.4.1">
+<Update label="2026-05-20" tags={["Update"]} description="v5.4.1">
   ## v5.4.1 — Higher data refresh rates, decoupled aim assist and **improved overlay rendering**
 
   This update improves how frequently game data is read and separates aim assist timing from the main update loop. The overlay now also renders more efficiently in certain conditions. Expect snappier aim tracking, more responsive visuals, and smoother overall performance.
@@ -165,7 +165,7 @@ description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Ass
 
   ### Updates
 
-  - **Fully modernized aim assist** — Now strictly hold-based (removed legacy toggle/always modes). Dynamic smoothing that adapts to your angular speed. Better AimBot \+ RCS coordination to avoid double compensation. Retuned per-weapon values.
+  - **Fully modernized aim assist** — Now strictly hold-based (removed legacy toggle/always modes). Dynamic smoothing that adapts to your angular speed. Better Aim Assist and RCS coordination to avoid double compensation. Retuned per-weapon values.
   - **Reversed TraceShape system** — Temporarily removed the previous TraceShape visibility system (which causes instability).
   - **Per-monitor DPI awareness** — Menus and overlays now scale correctly and stay crisp on any Windows display scaling setting.
 
@@ -178,21 +178,21 @@ description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Ass
   Download the latest build from your [account dashboard](https://ninjahackz.com/dashboard/).
 </Update>
 
-<Update label="2026-05-12" tags={["Feature","Update"]} description="v5.3.0">
+<Update label="2026-05-14" tags={["Feature","Update"]} description="v5.3.0">
   ## v5.3.0 — Precise visibility, smoother ESP & faster gameplay
 
-  This update brings significantly more accurate enemy visibility detection, an improved GUI with custom keybind support, better overlay layering, and improved startup.
+  This update brings more accurate enemy visibility detection, an improved menu with a custom keybind, better overlay layering, and improved startup.
 
   ### New features
 
-  - **Precise visibility detection** — Enemies are now detected far more reliably through walls and complex geometry using Trace Shape technique instead of m\_bSpottedByMask for cleaner ESP and safer aim-assist targeting.
+  - **Precise visibility detection** — Enemies are detected more reliably through walls and complex geometry using TraceShape instead of the spotted mask, for cleaner ESP and safer Aim Assist targeting.
 
   ### Updates
 
-  - **Custom menu keybind** — You can now set any key you prefer to open and close the cheat menu.
-  - **Improved menu UI** — New two-column layout with improved alignment, cleaner styling, and better overall usability.
-  - **Faster active features** — Aim assist, recoil control, triggerbot and other gameplay cheats now respond slightly quicker.
-  - **DirectComposition overlay** — Enabled by default (when supported) for superior layering and priority on top of CS2.
+  - **Custom menu keybind** — Set any key you prefer to open and close the menu.
+  - **Improved menu UI** — New two-column layout with improved alignment, cleaner styling, and better usability.
+  - **Faster active features** — Aim Assist, recoil control, and other active features respond slightly quicker.
+  - **DirectComposition overlay** — Enabled by default (when supported) for better layering on top of CS2.
   - **Improved startup** — Faster and more reliable process attachment with clearer feedback.
 
   ### Bug fixes
@@ -253,16 +253,19 @@ description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Ass
 <Update label="2026-04-22" tags={["Update"]} description="v5.0.2">
   ## v5.0.2 — Updated game offsets and netvars
 
-  NinjaHackz now supports the latest CS2 update (January 22, 2026). If you were experiencing errors or crashes after the recent CS2 patch, update to v5.0.2 to restore full compatibility.
+  NinjaHackz now supports the latest CS2 update. If you were experiencing errors or crashes after a recent CS2 patch, update to v5.0.2 to restore full compatibility.
 </Update>
 
 <Update label="2026-04-21" tags={["Update"]} description="v5.0.1">
   ## v5.0.1 — Compatibility update
 
-  **What's new**
+  ### Updates
 
   - Updated memory offsets for latest CS2 patch compatibility
   - Reworked Aim Assist settings UI layout for clarity
+
+  ### Bug fixes
+
   - Fixed overlay freezing when switching between fullscreen and windowed display modes
 </Update>
 
