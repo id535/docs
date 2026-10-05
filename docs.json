@@ -53,6 +53,7 @@
           "using/overview",
           "using/aim-assist",
           "using/visuals",
+          "using/grenades",
           "using/radar",
           "using/crosshair",
           "using/extras",
@@ -122,5 +123,12 @@
     "ga4": {
       "measurementId": "G-WG5ZEXGL5E"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/using/beta",
+      "destination": "/using/visuals",
+      "permanent": true
+    }
+  ]
 }
