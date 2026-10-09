@@ -3,14 +3,43 @@ title: "Changelog"
 description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Assist, Visuals, Radar, Chams, and CS2 compatibility updates."
 ---
 
-<Update label="2026-10-09" tags={["Feature"]} description="v5.8.0">
-  ## v5.8.0 — Leave a review from Account
+<Update label="2026-10-09" tags={["Feature","Update"]} description="v5.8.0">
+  ## v5.8.0 — Grenades page, rebuilt aim profiles & Beta features on their own pages
 
-  This release adds a **Leave a review** link on the Account Help card so you can open the product review flow from the menu.
+  This release adds a **Grenades** page with lineup guides and a live grenade path, rebuilds aim profiles around **Subtle**, **Medium**, and **Strong** levels, moves every Beta feature onto the page it belongs to, and fixes several chams, aim, and menu issues.
 
   ### New features
 
-  - **Leave a review** — On Account, under Help (after Documentation, Troubleshooting, and Contact support), open the ninjahackz.com review flow in your browser. If you are logged out, the site asks you to sign in, then returns you to the review popup.
+  - **Grenades page** — Grenades has its own page in the sidebar, under **Visuals**. **Lineup** sits on the left and **Grenade Trajectory** on the right. Both start off.
+  - **Lineup Guide** — Shows stand circles, name plaques, and an aim marker for the grenade in your hand. Turn on **Throw Note** for the throw action and **Metres** for the distance on the plaque. The guide never aims or throws for you.
+  - **Grenade Trajectory** — **Show Trajectory** draws the path of the grenade in your hand, with each bounce and the spot where it stops. Set the line width with **Thickness**. The path follows your aim as you move.
+  - **Aim profiles** — Set **Assist level** to **Subtle**, **Medium**, or **Strong** as the baseline for every gun. Use **Tune a specific gun or class** to give a weapon class or a single gun its own tuning, and remove that row to send it back to the baseline. Every gun and class has presets tuned to how it shoots, and the top row shows the gun you are holding and which profile it uses.
+  - **Metallic chams** — **Material** now offers **Metallic** alongside **Latex** and **Flat**.
+  - **Dropped Items chams** — Turn on **Dropped Items** to paint dropped weapons, grenades, defuse kits, and the dropped or planted bomb through walls in their own color.
+  - **Leave a review** — The **Account** Help card has a **Leave a review** link that opens the ninjahackz.com review flow in your browser. If you are logged out, the site asks you to sign in first.
+
+  ### Updates
+
+  - **Beta features moved** — The **Beta** tab is gone. **Chams** is on **Visuals**, **Enable TraceShape** and **Smoke Occlusion** are on **Aim Assist** under **Fast Visibility Filter**, and **Grenade Trajectory** is on **Grenades**. Chams and Grenade Trajectory keep a beta mark.
+  - **Radar** — **Enable Radar** is now **Enable Radar Overlay**, and the overlay is the only radar. **Show on in-game radar**, **Center cross**, and **Show Radar Bounds** are removed. If you had **Show on in-game radar** on, your config loads with the overlay on.
+  - **Aim Assist feel** — Aim pull scales with your mouse sensitivity and scope zoom and moves on a smoother curve. **Subtle** and **Strong** now change how the assist feels, not only the bubble size. Aim Assist targets only the hitboxes you select, and **Recoil Compensation** follows the bullet line while you fire. Saved aim settings that match an old preset move to the new preset at the same level.
+  - **Aim bubble colors** — With **Display Aim Bubble** on, the bubble is red when no target is in reach, yellow when a selected hitbox you can aim at is inside it, and green while you hold a bind on that target.
+  - **Carried defuse kits** — With **Carried Items** on, a carried defuse kit takes the item color.
+  - **Render Cap** — The new **Display** option follows your monitor refresh rate. **No Limit** is removed, and a saved unlimited cap loads as **Display**.
+  - **Lower CPU use** — The overlay adds less CPU load to CS2 while it is attached.
+  - Steadier bomb timer, radar dots, and planted-bomb chams in online matches.
+  - Menu polish: new sidebar and button icons, a larger menu window, an ESP preview on **Visuals** that matches the live boxes and health, armor, and ammo bars, a centered loading window that sizes correctly with Windows display scaling, and a crash report prompt that matches the menu style. The HAGS note on **Extras** is gone, and the **Active Weapon** description now says it shows the weapon icon.
+
+  ### Bug fixes
+
+  - **Chams crashes** — Fixed CS2 crashes when chams painted weapons.
+  - **TraceShape stability** — A TraceShape fault no longer closes CS2. Closing the overlay now shuts TraceShape down fully, and if TraceShape turns itself off, that off state is saved.
+  - **Grenade Trajectory with TraceShape** — Using both at once no longer slows TraceShape visibility checks.
+  - **Aim hitboxes** — **Chest** and **Stomach** now target the right bones, and older configs no longer load a **Stomach** hitbox as **Chest**.
+  - **Aim bubble** — The bubble no longer lights up when the only selected hitbox inside it is blocked.
+  - **First-run welcome** — The welcome card stays in front of the menu, so **Got it** and **Open documentation** respond to clicks. The license notice now stacks under the menu hint instead of overlapping it.
+  - **Account** — Clicking **Check** or **Release** again while the first request is still running no longer stalls the menu.
+  - Menu icons that showed as **?** now display correctly. Disabled rows no longer highlight on hover, aim profile rows highlight across their full width, and the loading window status text no longer jumps every second.
 
   Download the latest build from your [account dashboard](https://ninjahackz.com/dashboard/).
 </Update>

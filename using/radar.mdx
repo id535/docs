@@ -1,22 +1,22 @@
 ---
 title: "How to use Radar"
-description: "Enable Radar Overlay or Show on in-game radar, match Radar HUD Size and Radar Map Zoom, then set offsets, blip size, Off-radar arrows, and Bomb on Radar."
+description: "Enable Radar Overlay, match Radar HUD Size and Radar Map Zoom, then set offsets, blip size, Off-radar arrows, and Bomb on Radar."
 sidebarTitle: "Radar"
 keywords:
   - "radar"
+  - "radar overlay"
   - "bomb on radar"
   - "hud size"
   - "off-radar arrows"
-  - "in-game radar"
 ---
 
-Use **Radar** to draw enemy blips over CS2's radar, or to mark enemies on CS2's own radar. Open the menu with **N**, then open the **Radar** tab.
+Use **Radar** to draw enemy blips over CS2's radar. Open the menu with **N**, then open the **Radar** tab.
 
 ## Radar Overlay
 
 <Steps>
   <Step title="Enable Radar Overlay">
-    Turn on **Enable Radar Overlay** to draw enemy blips over CS2's radar. This turns off **Show on in-game radar**.
+    Turn on **Enable Radar Overlay** to draw enemy blips over CS2's radar. The other Radar options stay greyed out until this is on.
   </Step>
   <Step title="Match CS2 radar">
     Set **Radar HUD Size** and **Radar Map Zoom** so the overlay matches the in-game CS2 radar.
@@ -34,13 +34,9 @@ Use **Radar** to draw enemy blips over CS2's radar, or to mark enemies on CS2's 
 - **Off-radar arrows** — Edge arrows for enemies outside the current radar radius.
 - **Bomb on Radar** — Show planted and dropped C4 on the radar.
 
-## In-game Radar
-
-**Show on in-game radar** marks enemies on CS2's own radar. It writes game memory and turns off **Enable Radar Overlay**.
-
-<Warning>
-  Prefer **Enable Radar Overlay** unless you need the native radar marks. Memory writes are riskier than an overlay.
-</Warning>
+<Note>
+  The in-game radar option (**Show on in-game radar**) is removed. The overlay is the only radar. If you had that option on, your config loads with **Enable Radar Overlay** on.
+</Note>
 
 <Note>
   Teammate filtering is automatic. In normal team modes Radar shows enemies only. In deathmatch, workshop/custom, and free-for-all, Radar draws all players.
