@@ -3,6 +3,27 @@ title: "Changelog"
 description: "Release notes for NinjaHackz CS2 overlay builds, including Aim Assist, Visuals, Radar, Chams, and CS2 compatibility updates."
 ---
 
+<Update label="2026-10-19" tags={["Update"]} description="v5.8.2">
+  ## v5.8.2 — 15 Oct CS2 compatibility & steadier license activation
+
+  This release updates NinjaHackz for the 15 Oct 2026 CS2 build, keeps your license on the same activation when you add or remove a drive, and fixes a few smaller issues.
+
+  ### Updates
+
+  - **15 Oct CS2 offsets** — Refreshed game offsets so the overlay matches the 15 Oct 2026 CS2 build.
+  - **License activation** — Mounting or unmounting another drive no longer makes your PC count as a new activation. The first time you launch this build, NinjaHackz moves your existing activation over without using another slot. The activation is also named after your PC's Windows computer name.
+  - **Account** — The license card no longer repeats the dashboard link. Use **Download** under **Updates** to open the dashboard.
+
+  ### Bug fixes
+
+  - **Aim Assist with TraceShape off** — With **Enable TraceShape** off, Aim Assist locks onto enemies again on the 15 Oct CS2 build. Before this fix, aim did not move the mouse.
+  - **Cash and ammo** — **Cash Display** and the ammo bar no longer show the previous player's numbers when a read fails. A failed cash read shows 0, and a failed ammo read hides the ammo bar.
+  - **Bunny Hop** — Bunny Hop no longer releases your jump when it cannot read the jump state.
+  - The **Release** and **Cancel** buttons in the **Deactivate** dialog on **Account** now have space between them.
+
+  Download the latest build from your [account dashboard](https://ninjahackz.com/dashboard/).
+</Update>
+
 <Update label="2026-10-09" tags={["Update"]} description="v5.8.1">
   ## v5.8.1 — Radar blip facing fix
 
