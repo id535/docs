@@ -66,7 +66,8 @@
         "pages": [
           "subscription-and-billing",
           "payment-options",
-          "cancellation"
+          "cancellation",
+          "legal"
         ]
       },
       {
@@ -98,6 +99,31 @@
         "group": "Changelog",
         "pages": [
           "changelog"
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "Legal",
+        "items": [
+          {
+            "label": "Terms of Service",
+            "href": "https://ninjahackz.com/terms/"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "https://ninjahackz.com/privacy/"
+          },
+          {
+            "label": "Cookie Policy",
+            "href": "https://ninjahackz.com/cookie-policy/"
+          },
+          {
+            "label": "Legal information",
+            "href": "/legal"
+          }
         ]
       }
     ]
