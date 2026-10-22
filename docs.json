@@ -81,7 +81,8 @@
         "group": "FAQ",
         "pages": [
           "faq/orders",
-          "faq/refunds"
+          "faq/refunds",
+          "faq/support-and-privacy"
         ]
       },
       {
