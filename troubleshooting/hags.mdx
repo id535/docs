@@ -34,6 +34,6 @@ Follow the exact same steps above and toggle the setting **back ON**, then resta
 
 Hardware-accelerated GPU scheduling (HAGS) lets the GPU manage its own command queues and scheduling directly. While this is beneficial for many modern games, it creates problems for external overlays like NinjaHackz.
 
-NinjaHackz works by injecting into the game’s render pipeline and using DComp (Desktop Composition) to draw on top. With HAGS enabled, the GPU’s hardware scheduler has trouble efficiently interleaving the game’s commands with the overlay’s extra draw calls. This causes presentation delays, stuttering, and high `D3D_Present` times in the overlay — even when the game itself runs smoothly.
+NinjaHackz draws its overlay in its own window on top of CS2. With HAGS enabled, the GPU’s hardware scheduler has trouble efficiently interleaving the game’s frames with the overlay’s frames. This causes presentation delays, stuttering, and high `D3D_Present` times in the overlay — even when the game itself runs smoothly.
 
-Disabling HAGS forces Windows to fall back to the legacy CPU-based scheduler. This method is much more compatible with the kind of mixed workload created by injected overlays, resulting in smoother frame delivery and lower overlay latency.
+Disabling HAGS forces Windows to fall back to the legacy CPU-based scheduler. This method is much more compatible with the mixed workload of a game plus a separate overlay, resulting in smoother frame delivery and lower overlay latency.

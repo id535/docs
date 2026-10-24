@@ -66,7 +66,8 @@
         "pages": [
           "subscription-and-billing",
           "payment-options",
-          "cancellation"
+          "cancellation",
+          "legal"
         ]
       },
       {
@@ -80,7 +81,8 @@
         "group": "FAQ",
         "pages": [
           "faq/orders",
-          "faq/refunds"
+          "faq/refunds",
+          "faq/support-and-privacy"
         ]
       },
       {
@@ -89,6 +91,7 @@
           "troubleshooting/crash-or-wont-start",
           "troubleshooting/display-mode",
           "troubleshooting/anti-cheat",
+          "troubleshooting/antivirus",
           "troubleshooting/hags",
           "troubleshooting/after-a-game-update",
           "troubleshooting/in-app-updates"
@@ -98,6 +101,31 @@
         "group": "Changelog",
         "pages": [
           "changelog"
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "Legal",
+        "items": [
+          {
+            "label": "Terms of Service",
+            "href": "https://ninjahackz.com/terms/"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "https://ninjahackz.com/privacy/"
+          },
+          {
+            "label": "Cookie Policy",
+            "href": "https://ninjahackz.com/cookie-policy/"
+          },
+          {
+            "label": "Legal information",
+            "href": "/legal"
+          }
         ]
       }
     ]
