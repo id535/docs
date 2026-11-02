@@ -60,6 +60,32 @@ Enable the bones you want Aim Assist to prefer:
 - **Pause After Kill** — **Off**, **0.5 s**, **1 s**, or **3 s**.
 - **Recoil Compensation** — Counter weapon spray while Aim Assist is held.
 
+## Use Recoil Compensation without aim pull
+
+Recoil Compensation does not need a target in the bubble. It counters your spray whenever the master **Aim Assist** toggle is on and you hold a bind while you fire a gun. To keep recoil control and turn off the pull toward enemies:
+
+<Steps>
+  <Step title="Turn on Aim Assist">
+    Turn on the master **Aim Assist** toggle.
+  </Step>
+
+  <Step title="Set Strength and Stickiness to 0">
+    Under **Aim Profiles**, open the **All weapons** row and set **Strength** and **Stickiness** to **0**. Aim Assist no longer moves your aim toward targets.
+  </Step>
+
+  <Step title="Set Recoil Compensation">
+    In the same profile, set **Recoil Compensation** to the amount you want. Higher values counter more of the spray.
+  </Step>
+
+  <Step title="Check your overrides">
+    A gun or class override under **Customized** uses its own values instead of **All weapons**. Set **Strength** and **Stickiness** to **0** in each override, or remove it.
+  </Step>
+
+  <Step title="Keep Primary Bind on Left Mouse">
+    Recoil Compensation runs only while you hold a bind and fire. Leave **Primary Bind** on **Left Mouse**, the default, so firing is enough.
+  </Step>
+</Steps>
+
 ## Fast Visibility Filter
 
 **Fast Visibility Filter** is on **Aim Assist** and writes CS2 game memory when TraceShape is on.
